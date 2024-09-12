@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CareProviderSearchConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <mappedObject>HealthcareProvider</mappedObject>
+    <masterLabel>Preferred Language</masterLabel>
+    <sourceField>Pref_Lang__c</sourceField>
+    <targetField>Preferred_Language__c</targetField>
+</CareProviderSearchConfig>
