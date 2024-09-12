@@ -1,0 +1,14 @@
+<apex:page >
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <div id="vfContainer"></div>
+    <script>
+        $Lightning.use("hic_signeasy:Authentication", function() {
+            $Lightning.createComponent("hic_signeasy:sme_AuthSetup", {},
+                "vfContainer",
+                function(cmp) {
+                    // Component was created
+                }
+            );
+        });
+    </script>
+</apex:page>

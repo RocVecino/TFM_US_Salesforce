@@ -1,0 +1,575 @@
+<apex:page showHeader="true" sidebar="true" controller="signaturit.SIG_NewSignature_Ctrl">
+    <apex:includeScript value="{!$Resource.signaturit__jquery}"/> 
+    <apex:includeScript value="/soap/ajax/35.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/35.0/apex.js"/>
+
+    <apex:includeScript value="{!$Resource.signaturit__pdfworker}"/>
+    <apex:includeScript value="{!$Resource.signaturit__pdf}"/>
+
+    <script type="text/javascript">
+
+        var attachmentId = '';
+        var pdfBinary = '';
+        var currentPage;
+        var nPages = 0;
+        var attachmentData;
+        var selectedAction;
+        var signatures = {};
+
+        function sendRequest() {
+            sendFromJavascript(JSON.stringify(getSignaturePositions()));
+        }
+        function showHideBlockCrea(show){
+            if(show){
+                $("[id*='blockCrea']").show();
+            }else{
+                $("[id*='blockCrea']").hide();
+            }
+        }
+        $( document ).ready(function() {
+            showHideBlockCrea({!showCreateSection});
+            bindCanvasEvents();
+            $("#pdfPreview").hide();
+        });
+        function attachmentSelected(){
+            hidePreview();
+            $("[id*='attachmentIdInput']").val($("[id*='chooseAttachment']").val());
+            $("[id*='nPagesInput']").val(0);  
+
+            attachmentHasBeenSelected();
+            hideLoading();
+            
+
+        }
+        function firstPage(){
+            hideSignature(currentPage);
+            currentPage = 1;
+            displayPage(currentPage);
+            return false;
+        }
+        function lastPage(){
+            hideSignature(currentPage);
+            currentPage = nPages;
+            displayPage(currentPage);
+            return false;
+        }
+        function prevPage(){
+            hideSignature(currentPage);
+            currentPage--;
+            displayPage(currentPage);
+            return false;
+        }
+        function nextPage(){
+            hideSignature(currentPage);
+            currentPage++;
+            displayPage(currentPage);
+            return false;
+        }
+        function disableAllButtons(){
+            enableButton(false, true);
+            enableButton(false, false);
+        }
+        function refreshButtonsEnabled(){
+
+            enableButton((currentPage < nPages), true);
+            enableButton((currentPage > 1), false);
+
+            $("#navigationStatus").html(currentPage+" / "+nPages);
+        }
+        function enableButton(enable, nextButton){
+            if(nextButton){
+                $("[id*='nextPageButton']").prop( "disabled", !enable );
+                $("[id*='lastPageButton']").prop( "disabled", !enable );
+            }else{
+                $("[id*='prevPageButton']").prop( "disabled", !enable );
+                $("[id*='firstPageButton']").prop( "disabled", !enable );
+            }
+        }
+        function displayPage(pageIndex){
+            disableAllButtons();
+            PDFJS.getDocument(attachmentData).then(function getPdfHelloWorld(pdf) {
+                $("[id*='nPagesInput']").val(pdf.pdfInfo.numPages);
+         
+                nPages = pdf.pdfInfo.numPages;
+                pdf.getPage(pageIndex).then(function getPageHelloWorld(page) {
+                  var index = page.pageIndex;
+                  var scale = 0.5;
+                  var viewport = page.getViewport(scale);
+                  var canvas = document.getElementById('canvas');
+                  var context = canvas.getContext('2d');
+                  canvas.height = viewport.height;
+                  canvas.width = viewport.width;
+                  var task = page.render({canvasContext: context, viewport: viewport})
+                  task.promise.then(function(){
+                    showSignature(pageIndex);
+                  });
+                    refreshButtonsEnabled();
+                });
+            }, function(error){
+                console.log(error);
+            });
+        }
+        function hidePreview(){
+            var selected = $('[id$="chooseSignature"]').val();
+
+            if(selected=='template'){
+                $('[id$="PDFEditor"]').hide();
+                $('[id$="SignaFields"]').hide();
+            }else if(selected=='selectPDF'){
+                $('[id$="PDFEditor"]').hide();
+                $('[id$="SignaFields"]').show();
+            }else if(selected=='create'){
+                $('[id$="PDFEditor"]').show();
+                $('[id$="SignaFields"]').show();
+            }else{
+                $('[id$="PDFEditor"]').hide();
+                $('[id$="SignaFields"]').hide();
+            }
+            $("#pdfPreview").hide();
+        }
+        function hideLoading(){
+            $("#loadingMessage").hide();
+            $("#pdfPreview").show();
+        }
+        function renderPdf(blob){
+            var file = new File([blob], '-');
+            var fileReader = new FileReader();
+
+            cleanAllSignatures();
+
+            fileReader.onload = function(ev) {
+                attachmentData = fileReader.result;
+                currentPage = 1;
+
+                displayPage(currentPage);
+            }
+            fileReader.readAsArrayBuffer(file);
+        }
+        function loadAttachment(){
+            console.log("loadattachment "+attachmentId);
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', "/services/data/v37.0/sobjects/Attachment/"+attachmentId+"/body", true);
+            xhr.setRequestHeader("Authorization", "Bearer {!JSENCODE($Api.Session_ID)}");
+            xhr.responseType = 'blob';
+            console.log(xhr);
+            
+            xhr.onload = function(e) {
+                console.log("STATUS "+this.status);
+                if (this.status == 200) {
+                    renderPdf(this.response);
+                }
+            };
+            xhr.send();
+        }
+        function loadAttachmentRichText(){
+            $('[id$="loadingPanel"]').show();
+
+            var xhr = new XMLHttpRequest();
+            var htmlContent = $("[id*='htmlContent']").val();
+            xhr.open('GET', "/apex/sig_renderhtmlaspdf?htmlContent="+ encodeURI(htmlContent), true);
+            xhr.setRequestHeader("Authorization", "Bearer {!JSENCODE($Api.Session_ID)}");
+            xhr.responseType = 'blob';
+            console.log(xhr);
+            xhr.onload = function(e) {
+                console.log("STATUS "+this.status);
+                if (this.status == 200) {
+                    renderPdf(this.response);
+
+                    $('[id$="loadingPanel"]').hide();
+                }
+            };
+            xhr.send();
+        }
+
+        // Signature behavior//
+        function Signature(options) {
+            var node = $("<div id='signature' style='position: absolute; background-color: rgba(35, 75, 85, 0.7); cursor: pointer;'><div id='close-signature' style='position: absolute; top: -8px; right: -8px; width: 16px; height: 16px; background-color: rgb(35, 75, 85); color: #fff; border-radius: 10px; font-size: 10px; font-weight: bold; line-height: 16px;'>&#10005;</div></div>"),
+                parentNode = $('#canvas-container'),
+                parentHeight = parentNode.height(),
+                parentWidth = parentNode.width(),
+                hasSignature = false,
+                dragging = false,
+                lastPosition = {},
+                draggin = false,
+                self = this;
+
+            this.top = options.top || 70;
+            this.left = options.left || 50;
+            this.width = options.width || 25;
+            this.height = options.height || 10;
+
+            this.updatePosition = _updateWidget;
+            this.hideSignature = _hideSignature;
+            this.deleteSignature = _deleteSignature;
+            this.hasSignature = _hasSignature;
+            this.showSignature = _showSignature;
+            this.getSignaturePosition = _getSignaturePosition;
+
+            function _handlerEvent(event) {
+                switch (event.type) {
+                    case 'mousedown':
+                        dragging = true;
+
+                        lastPosition = {
+                            left: event.offsetX,
+                            top: event.offsetY
+                        };
+
+                        break;
+
+                    case 'mouseup':
+                        dragging = false;
+
+                        break;
+
+                    case 'mousemove':
+                        var top, left;
+
+                        if (dragging) {
+                            left = lastPosition.left - event.offsetX;
+                            top = lastPosition.top - event.offsetY;
+
+                            _moveWidget.call(self, left, top);
+                        }
+
+                        break;
+
+                    default:
+                        if (event.target.id === 'close-signature') {
+                            _deleteSignature();
+                        }
+
+                        event.stopPropagation()
+                }
+            }
+
+            function _updateWidget (options) {
+                if (!hasSignature) {
+                    _appendSignature()
+                }
+
+                for (option in options) {
+                    if (this.hasOwnProperty(option)) {
+                        this[option] = options[option];
+                    }
+                }
+
+                node.css({
+                    'width': this.width.toFixed(2) + '%',   
+                    'height': this.height.toFixed(2) + '%'
+                });
+
+                _moveWidget.call(this, 0, 0);
+            }
+
+            function _moveWidget (left, top) {
+                var widgetWidthInPx, widgetHeightInPx;
+
+                this.top -= top;
+                this.left -= left;
+
+                widgetHalfWidthInPx = (parentWidth * this.width / 100) / 2;
+                widgetHalfHeightInPx = (parentHeight * this.height / 100) / 2;
+
+                if (this.top + widgetHalfHeightInPx > parentHeight) {
+                    this.top = parentHeight - widgetHalfHeightInPx;
+                } else if (this.top < widgetHalfHeightInPx) {
+                    this.top = widgetHalfHeightInPx;
+                }
+
+                if (this.left + widgetHalfWidthInPx > parentWidth) {
+                    this.left = parentWidth - widgetHalfWidthInPx;
+                } else if (this.left < widgetHalfWidthInPx) {
+                    this.left = widgetHalfWidthInPx;
+                }
+
+                node.css({
+                    'top': (this.top - widgetHalfHeightInPx).toFixed(2) + 'px',
+                    'left': (this.left - widgetHalfWidthInPx).toFixed(2) + 'px'
+                });
+            }
+
+            function _appendSignature () {
+                _bindEvents();
+
+                hasSignature = true;
+                
+                parentNode.append(node);
+            }
+
+            function _hideSignature () {
+                node.remove();
+            }
+
+            function _showSignature () {
+                if (hasSignature) {
+                    _appendSignature();
+                }
+            }
+
+            function _deleteSignature () {
+                node.remove();
+
+                hasSignature = false;
+            }
+
+            function _hasSignature () {
+                return hasSignature;
+            }
+
+            function _bindEvents () {
+                node
+                    .bind('click', _handlerEvent)
+                    .bind('mousedown', _handlerEvent)
+                    .bind('mousemove', _handlerEvent)
+                    .bind('mouseup', _handlerEvent);    
+            }
+
+            function _getSignaturePosition () {
+                return {
+                    width: this.width,
+                    height: this.height,
+                    top: (this.top / parentHeight * 100) - (this.height / 2),
+                    left: (this.left / parentWidth * 100) - (this.width / 2)
+                };
+            }
+
+            _updateWidget.call(this);
+        }
+
+        function hideSignature (page) {
+            if (signatures[page]) {
+                signatures[page].hideSignature();
+            }
+        }
+
+        function showSignature (page) {
+            if (signatures[page]) {
+                signatures[page].showSignature();
+            }   
+        }
+
+        function bindCanvasEvents () {
+            $('#canvas-container').bind('click', function (event) {
+                var options = {};
+
+                options.top = event.offsetY;
+                options.left = event.offsetX;
+
+                if (signatures[currentPage]) {
+                    signatures[currentPage].updatePosition(options);
+                } else {
+                    signatures[currentPage] = new Signature(options);
+                }               
+            });
+        }
+
+        function cleanAllSignatures () {
+            for (signature in signatures) {
+                if (signatures.hasOwnProperty(signature)) {
+                    signatures[signature].deleteSignature();
+
+                    delete signatures[signature];
+                }
+            }
+        }
+
+        function getSignaturePositions () {
+            var signaturePositions = new Array(nPages);
+
+            for (signature in signatures) {
+                if (signatures.hasOwnProperty(signature)) {
+                    signaturePositions[signature - 1] = signatures[signature].getSignaturePosition();
+                }
+            }
+            return signaturePositions
+        }
+        //
+    </script>
+
+
+    <apex:form rendered="{!parentId != null}">
+        <apex:pageBlock title="{!$Label.signaturit__SIG_NewSignature}" mode="edit">
+            <div align="center" draggable="false" style="margin-top: 10px;margin-bottom:10px">
+            </div>
+            <apex:outputPanel id="messages">
+            <div style="display: none;">
+                signaRequest: {!signaRequest.signaturit__Archive_Content__c}<br/>
+                richTextContent: {!richTextContent}<br/>
+            </div>
+            <br/>
+            <apex:pageMessages />   
+            
+            
+            </apex:outputPanel>
+
+            <apex:pageBlockSection title="{!$Label.signaturit__SIG_SignerInformation}" id="block2" columns="1">
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="{!$ObjectType.signaturit__SignatureRequest__c.fields.signaturit__Contact__c.Label}" />
+                    <apex:outputpanel layout="block" styleClass="requiredInput">
+                        <apex:outputpanel layout="block" styleClass="requiredBlock"></apex:outputpanel>
+                        <apex:inputfield value="{!signaRequest.signaturit__Contact__c}"></apex:inputfield>
+                    </apex:outputpanel>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="{!$ObjectType.signaturit__SignatureRequest__c.fields.Name.Label}" />
+                    <apex:outputpanel layout="block" styleClass="requiredInput">
+                        <apex:outputpanel layout="block" styleClass="requiredBlock"></apex:outputpanel>
+                        <apex:inputfield value="{!signaRequest.Name}"></apex:inputfield>
+                    </apex:outputpanel>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="{!$ObjectType.signaturit__SignatureRequest__c.fields.signaturit__Body__c.Label}" />
+                    <apex:outputpanel layout="block">
+                        <apex:outputpanel layout="block" styleClass="requiredBlock"></apex:outputpanel>
+                        <apex:inputfield value="{!signaRequest.signaturit__Body__c}" style="width: 50%;"></apex:inputfield>
+                    </apex:outputpanel>
+                </apex:pageblocksectionitem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="{!$Label.signaturit__SIG_DocumentType}" id="blockxxxxxxx" columns="2" >
+                <apex:pageblocksectionitem dataStyle="width:18%; align:right; padding-right:5px">
+                    <apex:outputLabel value="{!$Label.signaturit__SIG_SelectOptionSendDocument}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem dataStyle="width:82%; align:left;">
+                    <apex:actionRegion >
+                        <apex:outputpanel id="block1" layout="block" styleClass="requiredInput">
+                            <apex:outputpanel layout="block" styleClass="requiredBlock"></apex:outputpanel>
+                             <apex:selectList id="chooseSignature" value="{!actionSelected}" size="1">
+                                    <apex:actionSupport event="onchange" action="{!resetNPages}" oncomplete="hidePreview()" reRender="buttonsTop, buttonsBottom,block1,blockRerender,blockCarga,content" />
+                                    <apex:selectOptions value="{!signatureList}"/>
+                                </apex:selectList>  
+                            <!-- SHOW / HIDE blockCrea -->
+                            <!-- InputField of type rich text are not allowed to be rerendered, so we hide / show it with jQuery -->
+                            <!-- SHOW / HIDE blockCrea -->
+                            <script>
+                                showHideBlockCrea({!showCreateSection});
+                            </script>
+                        </apex:outputpanel>
+                    </apex:actionRegion>
+                </apex:pageblocksectionitem>
+            </apex:pageBlockSection>
+                <apex:outputPanel id="blockRerender">
+                    <apex:outputPanel id="blockCarga" rendered="{!showTemplateSection}">
+                        <apex:pageBlockSection >
+                            <apex:pageblocksectionitem dataStyle="width:18%; align:right; ">
+                                <apex:outputLabel value="{!$Label.signaturit__SIG_AvailableTemplates}" />
+                            </apex:pageblocksectionitem>
+                            <apex:pageblocksectionitem dataStyle="width:82%; text-align:left;" rendered="{!hasTemplates}">
+                                <apex:selectList id="chooseTemplate" value="{!templateSelected}" size="1" >
+                                    <apex:selectOptions value="{!templateList}"/>
+                                </apex:selectList>
+                            </apex:pageblocksectionitem>
+                            <apex:pageblocksectionitem dataStyle="width:82%; text-align:left;" rendered="{!!hasTemplates}">
+                                <apex:outputLabel value="{!$Label.signaturit__SIG_NoTemplates}" />                              
+                            </apex:pageblocksectionitem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel id="blockSelecciona" rendered="{!showAttachmentSection}">
+                        <apex:pageBlockSection columns="2">
+                            <apex:pageblocksectionitem dataStyle="width:18%; align:right; ">
+                                <apex:outputLabel value="{!$Label.signaturit__SIG_SelectFileFromAttachments}" />                    
+                            </apex:pageblocksectionitem>
+                            <apex:pageblocksectionitem dataStyle="width:82%; text-align:left;" rendered="{!attachList.size == 0}">
+                                <apex:outputLabel value="{!$Label.signaturit__SIG_NoDocumentsAttached}"/>
+                            </apex:pageblocksectionitem>
+                            <apex:pageblocksectionitem dataStyle="width:82%; text-align:left;" rendered="{!attachList.size > 0}">
+                                <apex:selectList id="chooseAttachment" value="{!attachmentSelected}" size="1" >
+                                    <apex:actionSupport event="onchange" action="{!resetNPages}" oncomplete="attachmentSelected()"  reRender="tabla,loadingPanel,content" />
+                                    <apex:selectOptions value="{!attachList}"/>
+                                </apex:selectList>
+                            </apex:pageblocksectionitem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+            </apex:outputPanel>
+            <apex:outputPanel id="PDFEditor" style="display: none;">
+                <apex:pageBlockSection title="{!$Label.signaturit__SIG_PDF_Editor}" id="blockxxxxxxx2" columns="1">
+                    <apex:outputPanel id="blockCrea" >
+                        <apex:outputText value="{!$Label.signaturit__SIG_CreateAttachmentFromRichText}" />
+                        <apex:pageBlockSection >
+                            <apex:pageblocksectionitem >
+                                <apex:outputLabel value="{!$ObjectType.signaturit__SignatureRequest__c.fields.signaturit__Attachment_Name__c.Label}" />
+                                <apex:outputpanel layout="block" styleClass="requiredInput">
+                                    <apex:outputpanel layout="block" styleClass="requiredBlock"></apex:outputpanel>
+                                    <apex:inputField value="{!signaRequest.signaturit__Attachment_Name__c}" />
+                                </apex:outputpanel>
+                            </apex:pageblocksectionitem>
+                        </apex:pageBlockSection>
+                        <apex:inputField id="htmlContent" value="{!signaRequest.signaturit__Archive_Content__c}"/>  
+                        <div style="float:left;padding:5px">
+                            <apex:commandLink value="{!$Label.signaturit__SIG_PreviewPDFDocument}" target="_blank" action="{!previewPDF}"/>
+                        </div>
+                        <apex:commandButton value="{!$Label.signaturit__SIG_Submit}" onclick="loadAttachmentFromRichText();hidePreview()" reRender="none"  style="align-self: center;"  />
+                    </apex:outputPanel>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            <apex:outputPanel id="SignaFields" style="display: none;">
+                <apex:pageBlockSection id="blockxxxxxxx3" columns="1">
+                    <apex:outputPanel id="content">
+                        <apex:outputPanel id="tabla">
+                            <script>
+                                var attachmentId = "{!JSENCODE(attachmentId)}";
+                            </script>
+                        </apex:outputPanel>
+                        
+                        <apex:outputPanel id="loadingPanel" style="display: none;">
+                            <center>                                
+                                <p>{!$Label.signaturit__sig_loadingattachmentdata}</p>
+                                <br/>
+                                <apex:image url="{!$Resource.signaturit__spinner}"/>
+                            </center>
+                        </apex:outputPanel>
+                
+                    </apex:outputPanel>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            <apex:inputHidden value="{!nPages}" id="nPagesInput"/>
+            <apex:inputHidden value="{!attachmentId}" id="attachmentIdInput"/>
+            <apex:actionFunction action="{!attachmentLoaded}" name="attachmentLoaded" rerender="content,messages" oncomplete="hideLoading()"/>
+            <apex:actionFunction action="{!attachmentHasBeenSelected}" name="attachmentHasBeenSelected" oncomplete="loadAttachment()" rerender="content"/>
+            <apex:actionFunction action="{!loadAttachmentFromRichText}" name="loadAttachmentFromRichText" rerender="content,messages" oncomplete="loadAttachmentRichText();hideLoading();"/>
+            <apex:actionFunction action="{!createAttachmentFromRichText}" name="createAttachmentFromRichText" oncomplete="sendRequest()" />
+            <apex:actionFunction action="{!resetNPages}" name="resetNPages" rerender="none" oncomplete="hidePreview()" />
+            <apex:actionFunction action="{!send}" name="send" rerender="messages"/>
+            <apex:actionFunction action="{!sendAttachCreated}" name="sendFromJavascript" rerender="messages">   
+                <apex:param name="serializedPositions" value="" />
+            </apex:actionFunction>
+            <apex:actionRegion >
+                <div id="pdfPreview">
+                    <apex:pageBlockSection id="blockxxxxxxx4" columns="1">
+                        <apex:outputPanel rendered="{!nPages == 0}">
+                            {!$Label.signaturit__SIG_PressSelectBeforeSignaturesPosition}
+                        </apex:outputPanel>
+                    </apex:pageBlockSection>
+                    <center id="viewer" style="margin-top:20px">
+                        <div style="height:440px">
+                            <div id="canvas-container" style="display: inline-block;position: relative">
+                                <canvas id="canvas" style="-webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5); -moz-box-shado: 0 0 2px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5)" />
+                            </div>
+                            <center id="loadingMessage">{!$Label.SIG_LoadingPreview}</center>
+                        </div>
+                        <center id="navigation" style="margin:10px">
+                                <apex:commandButton id="firstPageButton" onclick="firstPage();" value="<<" reRender="none" />
+                                <apex:commandButton id="prevPageButton" onclick="prevPage();" value="<" reRender="none" />
+                                <span id="navigationStatus" style="margin-right:20px;margin-left:20px"/>
+                                <apex:commandButton id="nextPageButton" onclick="nextPage();" value=">" reRender="none" />
+                                <apex:commandButton id="lastPageButton" onclick="lastPage();" value=">>" reRender="none" />
+                        </center>
+                    </center>
+                </div>
+            </apex:actionRegion>
+
+            <div align="center" draggable="false" style="margin-top: 10px;margin-bottom:10px">
+                <apex:outputPanel id="buttonsBottom">
+                    <apex:commandButton value="{!$Label.signaturit__SIG_Prev}" action="{!leaveForm}" style="align-self: center;"  />                
+                    <apex:outputPanel rendered="{!!showCreateSection}">
+                        <button style="text-decoration:none;padding:4px;" class="btn" onclick="sendFromJavascript(JSON.stringify(getSignaturePositions())); return false;">{!$Label.signaturit__SIG_Done}</button>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!showCreateSection}">
+                        <apex:commandButton value="{!$Label.signaturit__SIG_Done}" action="{!nothing}" onclick="createAttachmentFromRichText()" rerender="none" style="align-self: center;"  />
+                    </apex:outputPanel>
+                </apex:outputPanel>
+            </div>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:pageMessage rendered="{!parentId == null}" severity="Error" summary="{!$Label.signaturit__SIG_SelectARecord}" strength="3"/>
+</apex:page>

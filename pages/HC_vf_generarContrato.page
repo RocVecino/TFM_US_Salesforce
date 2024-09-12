@@ -1,0 +1,135 @@
+<apex:page id="MyFirstPDF" standardController="Lead" extensions="HC_cls_LeadGenerateContract_cc"  renderAs="pdf">
+    <!-- Botón para generar y guardar el PDF -->
+    <apex:form >
+        <apex:commandButton value="Guardar PDF" action="{!generateAndSavePdf}" styleClass="btn-save"/>
+    </apex:form>
+    <body>
+        <div class="" style="min-height: 2in;">
+            <!-- SECTION: header w/ company address and logo -->
+            <table class="header-table">
+                <tr>
+                    <td style="width: 75%">
+                        <apex:image width="2.75in" url="{!$Resource.HC_sr_logoColumbia}"/>
+                    </td>
+                    <td style="">
+                        <table style="width: 2.8in;border: solid 1px black; border-collapse: separate; ">
+                            <tr>
+                                <td style="text-align: center; font-size: 16pt; font-weight: bold; border-bottom: solid 1px black"
+                                    colspan="2">CONTRATO DE SEGURO DE SALUD
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>&nbsp;&nbsp;Fecha de emisión:</td>
+                                <td style="text-align:right;"> 
+                                    {!DAY(TODAY())}-{!MONTH(TODAY())}-{!YEAR(TODAY())}&nbsp;&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;&nbsp;Compañía Aseguradora:</td>
+                                <td style="text-align:right;">Columbia HC&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;&nbsp;Dirección:</td>
+                                <td style="text-align:right;">Cl Pez, 32, Madrid, España&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;&nbsp;Teléfono:</td>
+                                <td style="text-align:right;">954103343&nbsp;&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Datos del Asegurado -->
+        <div style="margin-top: 30px;">
+            <p style="font-size: 14pt; font-weight: bold; margin-bottom: 10px;"><b>Datos del Asegurado:</b></p>
+            <p style="margin-left: 20px;"><b>Nombre Completo:</b> {!lead.Name}</p>
+            <p style="margin-left: 20px;"><b>DNI:</b> {!lead.HC_fld_documentoIdentidad__c}</p> 
+            <p style="margin-left: 20px;"><b>Email:</b> {!lead.Email}</p>
+            <p style="margin-left: 20px;"><b>Teléfono:</b> {!lead.Phone}</p>
+            <p style="margin-left: 20px;"><b>Dirección:</b> {!lead.Street}, {!lead.City}, {!lead.PostalCode}</p>
+        </div>
+        
+        <!-- Definiciones -->
+        <div style="margin-top: 30px;">
+            <p style="font-size: 14pt; font-weight: bold; margin-bottom: 10px;"><b>Definiciones: </b></p>
+            <p style="margin-left: 20px;">Para efectos de este contrato, los siguientes términos se definen como:</p>
+            <p style="margin-left: 20px;"><b>Asegurado: </b>La persona física titular de la póliza, identificada como {!lead.Name}.</p> 
+            <p style="margin-left: 20px;"><b>Asegurador:</b> Seguros Columbia HC, que provee la cobertura bajo este contrato.</p>
+        </div>
+        
+        <!-- Datos del Contrato del Seguro de Salud-->
+        <div style="margin-top: 30px;">
+            <p style="font-size: 14pt; font-weight: bold; margin-bottom: 10px;"><b>Detalles del Contrato:</b></p>
+        </div>
+        <div style="min-height: 5.7in;">
+            <!-- Contract Terms Table -->
+            <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+                <tr>
+                    <th style="border: 1px solid black; padding: 5px;">Concepto</th>
+                    <th style="border: 1px solid black; padding: 5px;">Detalles</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 5px;">Programa de Salud</td>
+                    <td style="border: 1px solid black; padding: 5px;">{!careProgramEnrollee.CareProgram.Name}</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 5px;">Coverturas</td>
+                    <td style="border: 1px solid black; padding: 5px;">{!careProgramEnrollee.CareProgram.Description}</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 5px;">Coberturas</td>
+                    <td style="border: 1px solid black; padding: 5px;">
+                        {!coverturas}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 5px;">Períodos de Carencia</td>
+                    <td style="border: 1px solid black; padding: 5px;">
+                        <p><b>Podología: </b> {!careProgramEnrollee.CareProgram.HC_fld_periodoCarenciaPodologia__c}</p>
+                        <p><b>Diagnóstico de alta tecnología: </b> {!careProgramEnrollee.CareProgram.HC_fld_periodoCarenciaDiagAltaTec__c}</p> 
+                        <p><b>Tratamientos especiales:</b> {!careProgramEnrollee.CareProgram.HC_fld_periodoCarenciaTratEsp__c}</p>
+                        <p><b>Preparación y asistencia al parto:</b> {!careProgramEnrollee.CareProgram.HC_fld_periodoCarenciaPrepAsistParto__c}</p>
+                        <p><b>Tratamiento infertilidad:</b> {!careProgramEnrollee.CareProgram.HC_fld_periodoCarenciaTratInfertilidad__c}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 5px;">Descuentos por forma de Pago (%)</td>
+                    <td style="border: 1px solid black; padding: 5px;">{!descFormaPago}</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 5px;">Prima Mensual (euro/mes)</td>
+                    <td style="border: 1px solid black; padding: 5px;">{!careProgramEnrollee.CareProgram.BudgetAmount}</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Datos de Pago -->
+        <div style="margin-top: 30px;">
+            <p style="font-size: 14pt; font-weight: bold; margin-bottom: 10px;"><b>Datos de Pago:</b></p>
+            <p style="margin-left: 20px;"><b>Frecuencia de Pago:</b> {!lead.HC_fld_frecuenciaPago__c}</p>
+            <p style="margin-left: 20px;"><b>Tipo de Pago:</b> {!lead.HC_fld_tipoPago__c}</p> 
+            <p style="margin-left: 20px;"><b>Banco:</b> {!lead.HC_fld_identificacionBanco__c }</p>
+            <p style="margin-left: 20px;"><b>Cuenta Bancaria:</b> {!lead.HC_fld_cuentaBancaria__c}</p>
+        </div>
+        
+        <div class="footer" style="">
+            <hr/>
+            <table align="center" style="width: 100%;">   
+                <tr>
+                    <td colspan="2" style="font-size: 10pt; color: green;">
+                        <table style="width: 100%; border-collapse: collapse; border: 1px solid black; ">
+                            <tr>
+                                <td style="text-align: left;">Columbia</td>                         
+                                <td style="text-align: right;">www.arrify.com</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>      
+        </div>
+    </body>
+</apex:page>

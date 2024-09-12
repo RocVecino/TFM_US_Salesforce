@@ -1,0 +1,62 @@
+<!-- Used when checking the signature related documents when these aren't stored in Salesforce (access to Sgnaturit system) -->
+<!-- The reference is made through the formula fields in Signature_Request__c -->
+<apex:page showHeader="false" sidebar="false" controller="signaturit.SIG_PdfViewer">
+	<apex:includeScript value="{!$Resource.signaturit__jquery}"/> 
+	<style>
+		#errorMessage {
+			margin: 20px;
+			line-height: 2em;
+		}
+	</style>
+
+	<script>
+		function loadRemotePDF(){
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', '{!JSENCODE(endpointWithVersion)}/signatures/{!JSENCODE($CurrentPage.parameters.documentId)}/documents/{!JSENCODE(innerId)}/download/{!JSENCODE($CurrentPage.parameters.documentType)}', true);
+			xhr.setRequestHeader("Authorization", "Bearer {!JSENCODE(accessToken)}");
+			xhr.responseType = 'blob';
+
+			xhr.onload = function(e) {
+		  		$("[id*='spinner']").hide();
+			  	if (this.status == 200) {
+				    var blob = this.response;
+					var saveByteArray = (function () {
+					    var a = document.createElement("a");
+					    document.body.appendChild(a);
+					    a.style = "display: none";
+					    return function (name) {
+					        //var blob = new Blob(data, {type: "octet/stream"}),
+					           var url = window.URL.createObjectURL(blob);
+					        a.href = url;
+					        a.download = name;
+					        a.click();
+					        window.URL.revokeObjectURL(url);
+					    };
+					}());
+
+					saveByteArray('{!JSENCODE($CurrentPage.parameters.documentType)}'+'.pdf');
+				}else{
+		  			$("[id*='errorMessage']").show();
+		  			$("[id*='errorMessage']").html($("[id*='errorMessage']").html() + '</br>' + xhr.statusText);
+				}
+			}
+			xhr.send();
+		}
+
+		$( document ).ready(function() {
+			loadRemotePDF();
+		}); 
+	</script>
+
+	<apex:pageMessages id="messages"/>
+
+	<center id="spinner" style="{!IF(error, 'display:none', '')}">
+		<p>{!$Label.signaturit__sig_loading}</p>
+		<apex:image url="{!$Resource.signaturit__spinner}"/>
+	</center>
+
+	<center id="errorMessage" style="display:none">
+		{!$Label.signaturit__sig_errorloadingdocument}:
+	</center>
+
+</apex:page>

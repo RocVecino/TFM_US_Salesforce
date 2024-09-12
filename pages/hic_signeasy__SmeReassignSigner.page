@@ -1,0 +1,12 @@
+<apex:page showHeader="false" sidebar="false" standardcontroller="hic_signeasy__Sign_Recipient__c" extensions="hic_signeasy.Sme_SignRedirectToReassign">
+    <html>
+        <head>
+            <script type="text/javascript">
+                let redirectUrl = '{!JSENCODE(auditUrl)}';
+                window.location.href = redirectUrl;
+            </script>
+        </head>
+        <body>
+        </body>
+    </html>
+</apex:page>

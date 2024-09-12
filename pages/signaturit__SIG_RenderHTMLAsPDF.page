@@ -1,0 +1,4 @@
+<!-- Used in the rich-text-generated-PDF preview -->
+<apex:page showHeader="true" sidebar="true" renderAs="pdf">
+	<apex:outputText escape="false">{!HTMLENCODE($CurrentPage.parameters.htmlContent)}</apex:outputText>
+</apex:page>

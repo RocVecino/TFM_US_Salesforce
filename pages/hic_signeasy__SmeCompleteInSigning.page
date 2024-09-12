@@ -1,0 +1,22 @@
+<apex:page showHeader="false" sidebar="false" controller="hic_signeasy.ViewIPAddressController">
+    <apex:includeLightning />    
+     <div id="LightningComponentid" /> 
+    <script>
+          var recordId = '{!HTMLENCODE($CurrentPage.parameters.id)}'; 
+          var parentId = '{!HTMLENCODE($CurrentPage.parameters.parentId)}'; 
+          var recipientMore = '{!HTMLENCODE($CurrentPage.parameters.recipientMore)}'
+    $Lightning.use("hic_signeasy:SmeCompleteInPersonSigning", function() {
+        $Lightning.createComponent("hic_signeasy:sme_CompleteInPersonSign",
+          { 
+            recordId :recordId,
+            parentId : parentId,
+            recipientMore : recipientMore,
+            currentIpAddress:'{!HTMLENCODE(ipAddress)}',
+          },
+         "LightningComponentid",
+          function(cmp) {
+           
+          });
+    });
+    </script>
+</apex:page>

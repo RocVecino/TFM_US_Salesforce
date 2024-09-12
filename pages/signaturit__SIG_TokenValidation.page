@@ -1,0 +1,34 @@
+<apex:page showHeader="true" sidebar="true" controller="signaturit.SIG_TokenValidation_Ctrl" lightningStylesheets="true">
+	<apex:includeScript value="{!$Resource.signaturit__jquery}"/> 
+    <script>
+		$( document ).ready(function() {
+			var url = window.location.href;
+			var refresh_token = url.substr(url.indexOf("access_token") + "access_token".length + 1);
+			refresh_token = refresh_token.substring(0, refresh_token.indexOf("&"));
+			$("#refreshToken").text(unescape(refresh_token));
+
+		}); 
+	</script>
+	<apex:form style="line-height: 22px;">
+		<apex:pageMessages />
+		<apex:pageBlock >
+			<div style="width: 65%; margin: 15px;" id="image">
+				<apex:image url="{!URLFOR($Resource.signaturit__images, 'images/logoTemp.png')}" width="200px" />
+			</div>
+			<apex:pageBlockSection columns="1" title="{!$Label.signaturit__SIG_SetYourSignaturitToken}" collapsible="false">
+				<apex:outputPanel >
+					<apex:outputText value="{!$Label.signaturit__SIG_GetYourAccessToken}" style="display: inline-block; padding: 10px 0;" />
+					<apex:outputLink value="{!$Label.signaturit__SIG_URLSignaturitToken}"> {!$Label.signaturit__SIG_TextSignaturitToken}</apex:outputLink>
+				</apex:outputPanel>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection columns="2">
+					<apex:inputField value="{!ssc.signaturit__API_Key__c}" style="width: 100%;"/>
+					<apex:commandButton value="{!$Label.signaturit__SIG_Check}" action="{!Check}" disabled="{!isChecked}" />
+					<apex:inputCheckbox value="{!signaLoad.signaturit__SIG_SaveDocumentsInSalesforce__c}" rendered="{!isAdmin}"/>
+			</apex:pageBlockSection>
+			<apex:pageBlockButtons location="bottom">
+				<apex:commandButton value="{!$Label.signaturit__SIG_Done}" action="{!Save}" disabled="{!!isChecked}"/>
+			</apex:pageBlockButtons> 
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

@@ -1,0 +1,120 @@
+<apex:page showHeader="false" sidebar="false" applyBodyTag="false" applyHtmlTag="false" standardStylesheets="false">
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Salesforce</title>
+        
+        <style media="screen">
+
+            #container {
+                padding: 53px;
+                font-size: 14px;
+                line-height: 23px;
+                font-weight: 300;
+                color: #5b5b5b;
+                font-family: "Roboto";
+            }
+
+            #container > #action-container {
+                margin-bottom: 70px;
+            }
+
+            #container > #action-container > p {
+                max-width: 400px;
+            }
+
+            #container > #action-container > p > .text-blue {
+                display: block;
+                color: #0090d7;
+            }
+
+            #container > #action-container > .button {
+                width: 200px;
+                height: 35px;
+                border-radius: 4px;
+                background-color: #7bb928;
+                color: #fff;
+                display: block;
+                text-align: center;
+                line-height: 35px;
+                text-decoration: none;
+            }
+
+            #container > #action-container > .button:hover {
+                background-color: #5f8f1f;
+            }
+
+            #container > #description-container {
+                display: table;
+                width: 100%;
+                border-radius: 3px;
+                background-color: #f8f8f8;
+                padding: 30px 20px 35px 33px;
+            }
+
+            #container > #description-container > div {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            #container > #description-container > div#description {
+                padding-right: 40px;
+            }
+
+            #container > #description-container > div > ol {
+                padding-left: 0;
+                list-style-type: none;
+            }
+
+            #container > #description-container > div > div.image-container {
+                width: 302px;
+                position: relative;
+            }
+
+            #container > #description-container > div > div.image-container > img.salesforce {
+                box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+                width: 100%;
+            }
+
+            #container > #description-container > div > div.image-container > img.arrow {
+                width: 56px;
+                bottom: -4px;
+                position: absolute;
+                left: 99px;
+            }
+
+            @media (max-width: 570px) {
+                #container {
+                    padding: 20px;
+                }
+
+                #container > #action-container {
+                    margin-bottom: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="action-container">
+                <apex:outputText value="{!$Label.signaturit__SIG_Postinstall_1}" escape="false" />
+                <a class="button" target="_blank" href="/apex/SIG_TokenValidation">{!$Label.SIG_Postinstall_button}</a>
+            </div>
+
+            <div id="description-container">
+                <div id="description">
+                    <apex:outputText value="{!$Label.signaturit__SIG_Postinstall_2}" escape="false" />
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img src="{!$Label.SIG_Postinstall_Image1}" class="salesforce" alt="Salesforce" /> 
+                        <img src="{!$Label.SIG_Postinstall_Image2}" class="arrow" alt="Arrow" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+</apex:page>

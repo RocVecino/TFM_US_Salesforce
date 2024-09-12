@@ -1,0 +1,23 @@
+<apex:page showHeader="false" sidebar="false" controller="hic_signeasy.ViewIPAddressController" >
+    <apex:includeLightning />    
+    <div id="LightningComponentid" />    
+    <script>
+    var recordId = '{!HTMLENCODE($CurrentPage.parameters.id)}'; 
+    var parentId = '{!HTMLENCODE($CurrentPage.parameters.parentId)}'; 
+    var mode = '{!HTMLENCODE($CurrentPage.parameters.mode)}'
+       var transactionUid = '{!HTMLENCODE($CurrentPage.parameters.transactionUid)}'; 
+    $Lightning.use("hic_signeasy:sme_PreviewAndTagApp", function() {
+        $Lightning.createComponent("hic_signeasy:sme_PreviewAndTag",
+          { 
+          recordId :recordId,
+          parentId : parentId,
+          mode:mode,
+          currentIpAddress:'{!HTMLENCODE(ipAddress)}',
+           transactionUid:transactionUid,
+          },
+          "LightningComponentid",
+          function(cmp) {
+          });
+    });
+    </script>
+</apex:page>

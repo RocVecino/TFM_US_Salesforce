@@ -1,0 +1,18 @@
+<apex:page showHeader="false" sidebar="false" controller="hic_signeasy.ViewIPAddressController" >
+    <apex:includeLightning />    
+    <div id="LightningComponentid" />    
+    <script>
+    var recordId = '{!HTMLENCODE($CurrentPage.parameters.id)}'; 
+    $Lightning.use("hic_signeasy:sme_CancelTransactionApp", function() {
+        $Lightning.createComponent("hic_signeasy:Sme_CancelTransaction",
+          { 
+          recordId :recordId,
+          currentIpAddress:'{!HTMLENCODE(ipAddress)}',
+         
+          },
+          "LightningComponentid",
+          function(cmp) {
+          });
+    });
+    </script>
+</apex:page>

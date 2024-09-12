@@ -1,0 +1,12 @@
+<apex:page standardController="Lead" extensions="HC_cls_LeadGenerateContract_cc">
+    <apex:form >
+        <!-- Botón para Generar y Guardar el PDF -->
+        <apex:commandButton value="Generar y Guardar PDF" action="{!generateAndSavePdf}" />
+
+        <!-- Mostrar el PDF en un iframe -->
+        <div style="margin-top: 20px;">
+            <!-- URL del PDF generado -->
+            <iframe src="{!pdfUrl}" width="100%" height="600px" frameborder="0"></iframe>
+        </div>
+    </apex:form>
+</apex:page>
