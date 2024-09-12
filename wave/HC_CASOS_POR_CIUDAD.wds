@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>TFM_HealthCloud</application>
+    <description>Created from the HC_recipeAanalyticsTFM recipe.</description>
+    <masterLabel>HC_CASOS_POR_CIUDAD</masterLabel>
+    <type>default</type>
+</WaveDataset>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folder>TFM_HealthCloud</folder>
+    <masterLabel>TFM_HealthCloud</masterLabel>
+    <shares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>rociovecino97@gmail.com.healthcloud</sharedTo>
+        <sharedToType>User</sharedToType>
+    </shares>
+</WaveApplication>
