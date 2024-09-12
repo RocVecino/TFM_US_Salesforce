@@ -1,0 +1,170 @@
+.cajaPrincipal {
+    border: 1px solid #C9C9C9;
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+article {
+    background-color: #F3F3F3;
+}
+
+.spanHorario {
+    margin-left: 17px;
+    margin-right: 10px;
+}
+
+.content {
+    border-top: 1px solid #C9C9C9;
+}
+
+.horasFormContainer{
+    margin-top: 5px;
+}
+
+.slds-modal__content{
+    overflow: initial !important;
+}
+
+.slds-modal__container{
+    max-width: 55rem !important;
+    width: 55rem !important;
+}
+
+.horarios-main-input {
+    display: flex;
+    margin: 0 10px 10px 10px;
+}
+
+.horarios-main-input-dias-de-semana {
+    display: flex;
+    margin: 0 10px 0 10px;
+}
+
+.spinner{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+
+.horasContainer {
+    display: flex;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .horasContainer{
+      flex-direction: column;
+    }
+
+    .slds-modal__footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .slds-modal__container{
+        min-width: 40rem !important;
+        width: 20rem !important;
+    }
+}
+.textHelpContainer {
+    font-size: 12px;
+    margin: 0 0 -10px 15px;
+}
+
+.textHelp {
+    font-family: Roboto;
+}
+
+
+.list-first {
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+
+.list-last {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.horasFormContainer{
+    margin-top: 5px;
+}
+
+.slds-modal__content{
+    overflow: initial !important;
+}
+
+.slds-modal__container{
+    max-width: 55rem !important;
+    width: 55rem !important;
+}
+
+.horarios-main-input {
+    display: flex;
+    margin: 0 10px 10px 10px;
+}
+
+.horarios-main-input-dias-de-semana {
+    display: flex;
+    margin: 0 10px 0 10px;
+}
+
+.spinner{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.horasContainer {
+    display: flex;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .horasContainer{
+      flex-direction: column;
+    }
+
+    .slds-modal__footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .slds-modal__container{
+        min-width: 40rem !important;
+        width: 20rem !important;
+    }
+}
+.textHelpContainer {
+    font-size: 12px;
+    margin: 0 0 -10px 15px;
+}
+
+.textHelp {
+    font-family: Roboto;
+}
+
+
+.mainContainer label{ 
+    color: #016A7F !important;
+}
+
+
+
+.list-first {
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+
+.list-last {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}

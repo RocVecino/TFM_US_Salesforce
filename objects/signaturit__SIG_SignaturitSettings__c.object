@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>signaturit__Expiration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If the request expires</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Si el proceso de firma tiene caducidad.</inlineHelpText>
+        <label>Expiration</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Expiration_date__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If expiration is set, the number of days to expiration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Si la caducidad está añadida, el numero de días hasta la fecha.</inlineHelpText>
+        <label>Days to Expiration</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Reminder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default reminder to set (picklist)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Recordatorio predeterminado (lista de selección).</inlineHelpText>
+        <label>Reminder</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Reminder_days__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Days of the week to send the reminder</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Días de la semana para enviar el recordatorio.</inlineHelpText>
+        <label>Reminder Days</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__SIG_SaveDocumentsInSalesforce__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Store documents in Salesforce</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__SaveAuditTrailInSalesforce__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Save Audit Trail In Salesforce</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__SaveSignedInSalesforce__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Save signed documents in Salesforce</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Guardar los documentos firmados en Salesforce.</inlineHelpText>
+        <label>Save Signed In Salesforce</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__SignType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default sign type (picklist)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tipo de firma por defecto (lista de selección).</inlineHelpText>
+        <label>Sign Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__SignatureType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Signature type to use in the process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tipo de firma para usar en el proceso.</inlineHelpText>
+        <label>SignatureType</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Use_Sandbox__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Use Sandbox</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__Use_User_Token__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicate if use the user token for the Signaturit connection. true --&gt; Use User token, False--&gt; Use Global Token</description>
+        <externalId>false</externalId>
+        <label>Use User Token</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Signaturit Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

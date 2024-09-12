@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ciudad</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ciudades</value>
+    </caseValues>
+    <fields>
+        <label><!-- Confirmados --></label>
+        <name>HC_fld_confirmados__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enfermedad Infecciosa --></label>
+        <name>HC_fld_enfermedadInfecciosa__c</name>
+        <relationshipLabel><!-- Ciudades --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Muertes --></label>
+        <name>HC_fld_muertes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre --></label>
+        <name>HC_fld_nombre__c</name>
+    </fields>
+    <gender>Feminine</gender>
+</CustomObjectTranslation>

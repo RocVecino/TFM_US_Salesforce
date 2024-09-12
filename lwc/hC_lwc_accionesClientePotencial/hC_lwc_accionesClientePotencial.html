@@ -1,0 +1,30 @@
+<template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_2-of-3">
+            <lightning-input label="D.N.I o N.I.E: " data-id="docIndentificador"></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-3 slds-align-bottom">
+            <lightning-button variant="brand" label="Consultar" onclick={handleConsultarDNI}></lightning-button>
+        </div>
+    </div>
+    <div class="slds-m-top_small">
+        <p class="slds-text-body_regular">{mensaje}</p>
+    </div>
+    <div if:true={showSelecDocumentosNecesarios}>
+        <div class="slds-m-top_medium">
+            <ul>
+                <template for:each={optionsDocumentosNecesarios} for:item="documento">
+                    <li key={documento} class="slds-m-bottom_medium">
+                        <lightning-input class="slds-text-title_bold" onchange={changeDocumento} type="file" label={documento.label} name={documento.label}></lightning-input>
+                        <div if:true={documento.showFileName}>
+                            <p class="slds-text-body_small slds-m-top_x-small">{documento.fileName}</p>
+                        </div>
+                    </li>
+                </template>
+                <div class="slds-col slds-size_1-of-3 slds-align-bottom">
+                    <lightning-button variant="brand" label="Guardar Archivos" onclick={handleGuardarFiles}></lightning-button>
+                </div>
+            </ul>
+        </div>
+    </div>
+</template>

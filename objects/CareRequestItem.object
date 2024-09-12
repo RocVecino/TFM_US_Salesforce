@@ -1,0 +1,3086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AmbulanceTransportDistance</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AmbulanceTransportReason</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>AmbulanceTransportType</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ApprovedLengthOfStay</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ApprovedLevelOfCare</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ApprovedQuantity</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ApprovedServiceEndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ApprovedServiceStartDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AuthApprovalIdentifier</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AuthorizationRefIdentifier</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CareRequestCaseId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>CareRequestId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ClinicalDetermination</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ClinicalDeterminationNotes</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ClinicalDeterminationReasonId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ClinicalServiceRequestId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CodeDescription</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CodeType</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CodeTypeIdentifier</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CumulativeLengthOfStay</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrentLevelOfCare</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>DecisionDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DeniedLevelOfCare</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>DeniedQuantity</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EffectiveDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>FreeFormProcedureDescription</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifiedCodeDescription</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifiedCodeIdentifier</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifiedCodeType</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ModifiedCodeTypeIdentifier</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifiedEffectiveDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifiedEndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifiedLevelOfCare</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ModifiedModifier</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifiedModifierDescription</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifiedProcedureCodeId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ModifiedProcedureCodeSetId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ModifiedQuantity</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Modifier</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Modifier2</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Modifier2Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Modifier3</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Modifier3Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Modifier4</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Modifier4Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ModifierCodeSetId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ModifierDescription</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ProcedureCodeId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProcedureCodeSetId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>QuantityType</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ReasonCodeId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RequestType</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RequestedLengthOfStay</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RequestedLevelOfCare</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RequestedServiceEndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RequestedServiceStartDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ServiceCategory</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ServiceCategoryCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ServicingFacilityId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ServicingProviderId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SourceSystem</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SourceSystemIdentifier</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SourceSystemModified</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StatusReason</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TransportLocationId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>All_CareRequestItems</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Care Request Items</label>
+    </listViews>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Admission</fullName>
+        <active>true</active>
+        <description>Record type for notification and approval of an inpatient admission.</description>
+        <label>Admission</label>
+        <picklistValues>
+            <picklist>AmbulanceTransportReason</picklist>
+            <values>
+                <fullName>Patient Transferred to Rehabilitation Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Transferred to Residential Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the benefit of a preferred physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the care of a specialist or for availability of specialized equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the nearness of family members</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported to nearest facility for care of symptoms%2C complaints%2C or both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AmbulanceTransportType</picklist>
+            <values>
+                <fullName>Initial Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Trip</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ModifiedCodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QuantityType</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visits</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified - Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified in Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Payer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Certified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>StatusReason</picklist>
+            <values>
+                <fullName>Additional Patient Condition Information Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization Number Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization%2FAccess Restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Quantity Exceeded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification Information Does Not Match Patient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Birth Follows Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Death Precedes Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service Not Within Allowable Inquiry Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service in Future</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Patient ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Subscriber%2FInsured ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experimental Service or Procedure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID Qualifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Provider Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Gender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Input Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquired Benefit Inconsistent with Provider Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Authorization Number Format</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Participant Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid or Missing Provider Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Accident Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Admission Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date-of-Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Diagnosis Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Discharge Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Expected Date of Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Last Menstrual Period Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Onset of Current Condition or Illness Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Procedure Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Referring Provider Identification Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response received - Transaction Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Birth Date Does Not Match That for the Patient on the Database</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Eligible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Ineligible for Inquiries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Not on File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider is Not Primary Care Physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required application data missing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Primary Care Physician Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Dates Not Within Provider Plan Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber Found%2C Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not in Group%2FPlan Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Respond at Current Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Appeal</fullName>
+        <active>true</active>
+        <description>Record type for review and disposition of an appeal related to a prior authorization or admission decision.</description>
+        <label>Appeal</label>
+        <picklistValues>
+            <picklist>AmbulanceTransportReason</picklist>
+            <values>
+                <fullName>Patient Transferred to Rehabilitation Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Transferred to Residential Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the benefit of a preferred physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the care of a specialist or for availability of specialized equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the nearness of family members</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported to nearest facility for care of symptoms%2C complaints%2C or both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AmbulanceTransportType</picklist>
+            <values>
+                <fullName>Initial Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Trip</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ModifiedCodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QuantityType</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visits</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified - Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified in Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Payer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Certified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>StatusReason</picklist>
+            <values>
+                <fullName>Additional Patient Condition Information Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization Number Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization%2FAccess Restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Quantity Exceeded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification Information Does Not Match Patient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Birth Follows Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Death Precedes Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service Not Within Allowable Inquiry Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service in Future</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Patient ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Subscriber%2FInsured ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experimental Service or Procedure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID Qualifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Provider Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Gender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Input Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquired Benefit Inconsistent with Provider Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Authorization Number Format</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Participant Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid or Missing Provider Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Accident Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Admission Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date-of-Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Diagnosis Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Discharge Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Expected Date of Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Last Menstrual Period Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Onset of Current Condition or Illness Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Procedure Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Referring Provider Identification Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response received - Transaction Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Birth Date Does Not Match That for the Patient on the Database</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Eligible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Ineligible for Inquiries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Not on File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider is Not Primary Care Physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required application data missing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Primary Care Physician Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Dates Not Within Provider Plan Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber Found%2C Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not in Group%2FPlan Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Respond at Current Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Complaint</fullName>
+        <active>true</active>
+        <description>Record type for review and resolution of a complaint.</description>
+        <label>Complaint</label>
+        <picklistValues>
+            <picklist>AmbulanceTransportReason</picklist>
+            <values>
+                <fullName>Patient Transferred to Rehabilitation Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Transferred to Residential Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the benefit of a preferred physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the care of a specialist or for availability of specialized equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the nearness of family members</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported to nearest facility for care of symptoms%2C complaints%2C or both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AmbulanceTransportType</picklist>
+            <values>
+                <fullName>Initial Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Trip</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ModifiedCodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QuantityType</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visits</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified - Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified in Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Payer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Certified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>StatusReason</picklist>
+            <values>
+                <fullName>Additional Patient Condition Information Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization Number Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization%2FAccess Restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Quantity Exceeded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification Information Does Not Match Patient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Birth Follows Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Death Precedes Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service Not Within Allowable Inquiry Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service in Future</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Patient ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Subscriber%2FInsured ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experimental Service or Procedure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID Qualifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Provider Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Gender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Input Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquired Benefit Inconsistent with Provider Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Authorization Number Format</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Participant Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid or Missing Provider Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Accident Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Admission Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date-of-Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Diagnosis Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Discharge Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Expected Date of Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Last Menstrual Period Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Onset of Current Condition or Illness Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Procedure Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Referring Provider Identification Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response received - Transaction Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Birth Date Does Not Match That for the Patient on the Database</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Eligible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Ineligible for Inquiries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Not on File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider is Not Primary Care Physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required application data missing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Primary Care Physician Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Dates Not Within Provider Plan Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber Found%2C Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not in Group%2FPlan Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Respond at Current Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ConcurrentReview</fullName>
+        <active>true</active>
+        <description>Record type for review and approval of a continued stay related to an inpatient admission.</description>
+        <label>Concurrent Review</label>
+        <picklistValues>
+            <picklist>AmbulanceTransportReason</picklist>
+            <values>
+                <fullName>Patient Transferred to Rehabilitation Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Transferred to Residential Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the benefit of a preferred physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the care of a specialist or for availability of specialized equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the nearness of family members</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported to nearest facility for care of symptoms%2C complaints%2C or both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AmbulanceTransportType</picklist>
+            <values>
+                <fullName>Initial Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Trip</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ModifiedCodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QuantityType</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visits</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified - Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified in Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Payer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Certified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>StatusReason</picklist>
+            <values>
+                <fullName>Additional Patient Condition Information Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization Number Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization%2FAccess Restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Quantity Exceeded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification Information Does Not Match Patient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Birth Follows Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Death Precedes Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service Not Within Allowable Inquiry Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service in Future</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Patient ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Subscriber%2FInsured ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experimental Service or Procedure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID Qualifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Provider Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Gender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Input Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquired Benefit Inconsistent with Provider Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Authorization Number Format</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Participant Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid or Missing Provider Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Accident Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Admission Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date-of-Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Diagnosis Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Discharge Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Expected Date of Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Last Menstrual Period Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Onset of Current Condition or Illness Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Procedure Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Referring Provider Identification Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response received - Transaction Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Birth Date Does Not Match That for the Patient on the Database</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Eligible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Ineligible for Inquiries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Not on File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider is Not Primary Care Physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required application data missing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Primary Care Physician Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Dates Not Within Provider Plan Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber Found%2C Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not in Group%2FPlan Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Respond at Current Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>DrugRequest</fullName>
+        <active>true</active>
+        <description>Record type for prior authorization request and approval of a prescription drug.</description>
+        <label>Drug Request</label>
+        <picklistValues>
+            <picklist>AmbulanceTransportReason</picklist>
+            <values>
+                <fullName>Patient Transferred to Rehabilitation Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Transferred to Residential Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the benefit of a preferred physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the care of a specialist or for availability of specialized equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the nearness of family members</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported to nearest facility for care of symptoms%2C complaints%2C or both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AmbulanceTransportType</picklist>
+            <values>
+                <fullName>Initial Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Trip</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ModifiedCodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QuantityType</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visits</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified - Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified in Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Payer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Certified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>StatusReason</picklist>
+            <values>
+                <fullName>Additional Patient Condition Information Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization Number Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization%2FAccess Restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Quantity Exceeded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification Information Does Not Match Patient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Birth Follows Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Death Precedes Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service Not Within Allowable Inquiry Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service in Future</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Patient ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Subscriber%2FInsured ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experimental Service or Procedure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID Qualifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Provider Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Gender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Input Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquired Benefit Inconsistent with Provider Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Authorization Number Format</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Participant Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid or Missing Provider Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Accident Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Admission Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date-of-Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Diagnosis Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Discharge Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Expected Date of Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Last Menstrual Period Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Onset of Current Condition or Illness Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Procedure Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Referring Provider Identification Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response received - Transaction Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Birth Date Does Not Match That for the Patient on the Database</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Eligible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Ineligible for Inquiries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Not on File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider is Not Primary Care Physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required application data missing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Primary Care Physician Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Dates Not Within Provider Plan Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber Found%2C Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not in Group%2FPlan Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Respond at Current Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Grievance</fullName>
+        <active>true</active>
+        <description>Record type for review and resolution of a grievance.</description>
+        <label>Grievance</label>
+        <picklistValues>
+            <picklist>AmbulanceTransportReason</picklist>
+            <values>
+                <fullName>Patient Transferred to Rehabilitation Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Transferred to Residential Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the benefit of a preferred physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the care of a specialist or for availability of specialized equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the nearness of family members</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported to nearest facility for care of symptoms%2C complaints%2C or both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AmbulanceTransportType</picklist>
+            <values>
+                <fullName>Initial Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Trip</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ModifiedCodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QuantityType</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visits</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified - Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified in Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Payer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Certified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>StatusReason</picklist>
+            <values>
+                <fullName>Additional Patient Condition Information Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization Number Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization%2FAccess Restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Quantity Exceeded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification Information Does Not Match Patient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Birth Follows Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Death Precedes Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service Not Within Allowable Inquiry Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service in Future</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Patient ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Subscriber%2FInsured ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experimental Service or Procedure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID Qualifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Provider Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Gender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Input Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquired Benefit Inconsistent with Provider Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Authorization Number Format</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Participant Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid or Missing Provider Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Accident Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Admission Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date-of-Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Diagnosis Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Discharge Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Expected Date of Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Last Menstrual Period Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Onset of Current Condition or Illness Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Procedure Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Referring Provider Identification Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response received - Transaction Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Birth Date Does Not Match That for the Patient on the Database</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Eligible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Ineligible for Inquiries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Not on File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider is Not Primary Care Physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required application data missing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Primary Care Physician Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Dates Not Within Provider Plan Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber Found%2C Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not in Group%2FPlan Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Respond at Current Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ServiceRequest</fullName>
+        <active>true</active>
+        <description>Record type for prior authorization request and approval of a procedure or service.</description>
+        <label>Service Request</label>
+        <picklistValues>
+            <picklist>AmbulanceTransportReason</picklist>
+            <values>
+                <fullName>Patient Transferred to Rehabilitation Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Transferred to Residential Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the benefit of a preferred physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the care of a specialist or for availability of specialized equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported for the nearness of family members</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient was transported to nearest facility for care of symptoms%2C complaints%2C or both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AmbulanceTransportType</picklist>
+            <values>
+                <fullName>Initial Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Trip</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ModifiedCodeType</picklist>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPCS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QuantityType</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Units</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visits</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified - Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified in Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Payer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Certified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>StatusReason</picklist>
+            <values>
+                <fullName>Additional Patient Condition Information Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization Number Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorization%2FAccess Restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Quantity Exceeded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification Information Does Not Match Patient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Birth Follows Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Death Precedes Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service Not Within Allowable Inquiry Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date of Service in Future</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Patient ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Subscriber%2FInsured ID Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experimental Service or Procedure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Product%2FService ID Qualifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inappropriate Provider Role</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconsistent with Patient%27s Gender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Input Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquired Benefit Inconsistent with Provider Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Authorization Number Format</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid Participant Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid or Missing Provider Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Accident Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Admission Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date%28s%29 of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Date-of-Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Diagnosis Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Discharge Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Expected Date of Birth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Last Menstrual Period Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Onset of Current Condition or Illness Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Patient Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Procedure Code%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider Specialty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Provider State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Referring Provider Identification Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Gender Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid%2FMissing Subscriber%2FInsured Name</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response received - Transaction Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Birth Date Does Not Match That for the Patient on the Database</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Eligible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Ineligible for Inquiries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Not on File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider is Not Primary Care Physician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required application data missing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requires Primary Care Physician Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Dates Not Within Provider Plan Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber Found%2C Patient Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscriber%2FInsured Not in Group%2FPlan Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Respond at Current Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CareRequestCase</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CareRequest</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ProcedureCode</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ModifiedProcedureCode</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TransportLocation</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ClinicalDeterminationReason</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ServicingProvider</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ClinicalServiceRequest</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CareRequestCase</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CareRequest</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ProcedureCode</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ModifiedProcedureCode</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TransportLocation</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ClinicalDeterminationReason</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ServicingProvider</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ClinicalServiceRequest</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CareRequestCase</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CareRequest</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ProcedureCode</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ModifiedProcedureCode</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TransportLocation</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ClinicalDeterminationReason</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ServicingProvider</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ClinicalServiceRequest</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CareRequestCase</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CareRequest</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ProcedureCode</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ModifiedProcedureCode</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TransportLocation</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ClinicalDeterminationReason</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ServicingProvider</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ClinicalServiceRequest</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Enfermedad Infecciosa</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Enfermedades Infecciosas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Casos Activos --></label>
+        <name>HC_fld_casosActivos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmados --></label>
+        <name>HC_fld_confirmados__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fallecidos --></label>
+        <name>HC_fld_fallecidos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fecha --></label>
+        <name>HC_fld_fecha__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provincia --></label>
+        <name>HC_fld_provincia__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recuperados --></label>
+        <name>HC_fld_recuperados__c</name>
+    </fields>
+    <fields>
+        <label><!-- Región - Iso --></label>
+        <name>HC_fld_regionIso__c</name>
+    </fields>
+    <fields>
+        <label><!-- Región Name --></label>
+        <name>HC_fld_regionName__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <recordTypes>
+        <description><!-- COVID-19 Statistics --></description>
+        <label><!-- COVID-19 --></label>
+        <name>COVID_19</name>
+    </recordTypes>
+</CustomObjectTranslation>

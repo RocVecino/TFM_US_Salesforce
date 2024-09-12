@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>signaturit__DeliveryType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Delivery Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Expiration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If the request expires</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If the request expires</inlineHelpText>
+        <label>Expiration</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Expiration_date__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If expiration is set, the number of days to expiration</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If expiration is set, the number of days to expiration</inlineHelpText>
+        <label>Days to Expiration</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Reminder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default reminder to set (picklist)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Default reminder to set (picklist)</inlineHelpText>
+        <label>Reminder</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Reminder_days__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Days of the week to send the reminder</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Días de la semana para enviar el recordatorio.</inlineHelpText>
+        <label>Reminder Days</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Rich_Body__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Rich Body</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>signaturit__SIG_SaveDocumentsInSalesforce__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Store documents in Salesforce</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__SaveAuditTrailInSalesforce__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Save Audit Trail In Salesforce</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__SaveSignedInSalesforce__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Save signed documents in Salesforce</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Save signed documents in Salesforce</inlineHelpText>
+        <label>Save Signed In Salesforce</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__SignType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default sign type (picklist)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Default sign type (picklist)</inlineHelpText>
+        <label>Sign Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__SignatureType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Signature type to use in the process</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Signature type to use in the process</inlineHelpText>
+        <label>SignatureType</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Subject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__UseSMSOTP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If SMS OTP should be used</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If SMS OTP should be used</inlineHelpText>
+        <label>Use SMS OTP</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__Use_Sandbox__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Use Sandbox</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__Use_User_Token__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicate if use the user token for the Signaturit connection. true --&gt; Use User token, False--&gt; Use Global Token</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Indicate if use the user token for the Signaturit connection. true --&gt; Use User token, False--&gt; Use Global Token</inlineHelpText>
+        <label>Use User Token</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Signaturit Settings</label>
+    <pluralLabel>Signaturit Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

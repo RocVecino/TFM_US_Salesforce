@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age --></label>
+        <name>HealthCloudGA__Age__c</name>
+    </fields>
+    <fields>
+        <help>Ціль, яку переслідує це завдання</help>
+        <label><!-- Goal --></label>
+        <name>HealthCloudGA__CarePlanGoal__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Проблема, яку вирішує це завдання</help>
+        <label><!-- Problem --></label>
+        <name>HealthCloudGA__CarePlanProblem__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Care Plan Template --></label>
+        <name>HealthCloudGA__CarePlanTemplate__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>HealthCloudGA__Category__c</name>
+        <picklistValues>
+            <masterLabel>Counselling</masterLabel>
+            <translation>Консультація</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnosis</masterLabel>
+            <translation>Діагноз</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exercise</masterLabel>
+            <translation>Вправа</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vaccination</masterLabel>
+            <translation>Вакцинація</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition Status --></label>
+        <name>HealthCloudGA__Conditions_Status__c</name>
+        <picklistValues>
+            <masterLabel>Asymptomatic</masterLabel>
+            <translation>Без симптомів</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asymptomatic - Declined to Participate</masterLabel>
+            <translation>Без симптомів - Відмова у співпраці</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cured</masterLabel>
+            <translation>Одужав(ла)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluated - No Risk</masterLabel>
+            <translation>Оцінено - Ризику немає</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic</masterLabel>
+            <translation>З симптомами</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic - Declined to Participate</masterLabel>
+            <translation>З симптомами - Відмова у співпраці</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Tracing Status --></label>
+        <name>HealthCloudGA__Contract_Tracing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Завершено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>Виконується</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoming</masterLabel>
+            <translation>Вхідний</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation>Немає відповіді</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>HealthCloudGA__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Decline to Specify</masterLabel>
+            <translation>Відмовити у наданні відомостей</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation>Жінка</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation>Чоловік</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Інш.</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monitored at Home --></label>
+        <name>HealthCloudGA__Monitored_at_Home__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Ні</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Так</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>HealthCloudGA__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskType --></label>
+        <name>HealthCloudGA__TaskType__c</name>
+        <picklistValues>
+            <masterLabel>Administrative</masterLabel>
+            <translation>Адміністративне</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation>Клінічне</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonclinical</masterLabel>
+            <translation><!-- Nonclinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Інш.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncategorized</masterLabel>
+            <translation>Не розбиті по категоріям</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Testing Status --></label>
+        <name>HealthCloudGA__Testing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Negative Test</masterLabel>
+            <translation>Негативний тест</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Test</masterLabel>
+            <translation>Позитивний тест</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Results Pending</masterLabel>
+            <translation>Очікування результатів тесту</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Scheduled</masterLabel>
+            <translation>Тестування заплановане</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing Recommended</masterLabel>
+            <translation>Тестування рекомендоване</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation>Невідомо</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

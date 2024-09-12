@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age --></label>
+        <name>HealthCloudGA__Age__c</name>
+    </fields>
+    <fields>
+        <help>Meta que esta tarefa pretende abordar</help>
+        <label><!-- Goal --></label>
+        <name>HealthCloudGA__CarePlanGoal__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Problema que esta tarefa pretende abordar</help>
+        <label><!-- Problem --></label>
+        <name>HealthCloudGA__CarePlanProblem__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Care Plan Template --></label>
+        <name>HealthCloudGA__CarePlanTemplate__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>HealthCloudGA__Category__c</name>
+        <picklistValues>
+            <masterLabel>Counselling</masterLabel>
+            <translation>Orientação</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnosis</masterLabel>
+            <translation>Diagnóstico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exercise</masterLabel>
+            <translation>Exercícios</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vaccination</masterLabel>
+            <translation>Vacinação</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition Status --></label>
+        <name>HealthCloudGA__Conditions_Status__c</name>
+        <picklistValues>
+            <masterLabel>Asymptomatic</masterLabel>
+            <translation>Assintomático</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asymptomatic - Declined to Participate</masterLabel>
+            <translation>Assintomático – recusou-se a participar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cured</masterLabel>
+            <translation>Curado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluated - No Risk</masterLabel>
+            <translation>Avaliado – sem risco</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic</masterLabel>
+            <translation>Sintomático</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic - Declined to Participate</masterLabel>
+            <translation>Sintomático – recusou-se a participar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Tracing Status --></label>
+        <name>HealthCloudGA__Contract_Tracing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Concluído</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>Em andamento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoming</masterLabel>
+            <translation>Entrada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation>Sem resposta</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>HealthCloudGA__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Decline to Specify</masterLabel>
+            <translation>Recusa para especificar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation>Feminino</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation>Masculino</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Outro</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monitored at Home --></label>
+        <name>HealthCloudGA__Monitored_at_Home__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Não</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Sim</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>HealthCloudGA__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskType --></label>
+        <name>HealthCloudGA__TaskType__c</name>
+        <picklistValues>
+            <masterLabel>Administrative</masterLabel>
+            <translation>Administrativo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation>Clínico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonclinical</masterLabel>
+            <translation><!-- Nonclinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Outro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncategorized</masterLabel>
+            <translation>Não categorizado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Testing Status --></label>
+        <name>HealthCloudGA__Testing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Negative Test</masterLabel>
+            <translation>Teste negativo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Test</masterLabel>
+            <translation>Teste positivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Results Pending</masterLabel>
+            <translation>Resultados do teste pendentes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Scheduled</masterLabel>
+            <translation>Teste agendado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing Recommended</masterLabel>
+            <translation>Teste recomendado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation>Desconhecido</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

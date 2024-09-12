@@ -1,0 +1,26 @@
+<template>
+    <div class="filas">
+        <div>
+            <lightning-combobox
+                    name="progress"
+                    label="Tipo de Vista:"
+                    value={valueEstadoDefault}
+                    options={optionsEstado}
+                    onchange={handleChange} >
+            </lightning-combobox>
+        </div>
+        <div>
+            <lightning-input type="text" data-name="inputBuscador" name="inputBuscador" label="Buscador:" onchange={changeFiterBuscador}></lightning-input>
+        </div>
+    </div>
+    <lightning-card title="">
+        <lightning-datatable
+            key-field="id"
+            data={dataBuscador}
+            columns={columns}
+            onsave={handleSave}
+            hide-checkbox-column="true">
+        </lightning-datatable>
+    </lightning-card>
+
+</template>

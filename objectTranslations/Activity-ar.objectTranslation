@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age --></label>
+        <name>HealthCloudGA__Age__c</name>
+    </fields>
+    <fields>
+        <help>الهدف الذي تعني بمعالجته هذه المهمة</help>
+        <label><!-- Goal --></label>
+        <name>HealthCloudGA__CarePlanGoal__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>الأنشطة التي تعني بمعالجتها هذه المهمة</help>
+        <label><!-- Problem --></label>
+        <name>HealthCloudGA__CarePlanProblem__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Care Plan Template --></label>
+        <name>HealthCloudGA__CarePlanTemplate__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>HealthCloudGA__Category__c</name>
+        <picklistValues>
+            <masterLabel>Counselling</masterLabel>
+            <translation>تقديم المشورة</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnosis</masterLabel>
+            <translation>التشخيص</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exercise</masterLabel>
+            <translation>ممارسات التمارين</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vaccination</masterLabel>
+            <translation>التحصين</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition Status --></label>
+        <name>HealthCloudGA__Conditions_Status__c</name>
+        <picklistValues>
+            <masterLabel>Asymptomatic</masterLabel>
+            <translation>غيرُ مَصْحوْب بأَعْراض</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asymptomatic - Declined to Participate</masterLabel>
+            <translation>غيرُ مَصْحوْب بأَعْراض - مرفوض للمشاركة</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cured</masterLabel>
+            <translation>تمت معالجته</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluated - No Risk</masterLabel>
+            <translation>تم التقييم - لا توجد مخاطر</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic</masterLabel>
+            <translation>مَصْحوْب بأَعْراض</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic - Declined to Participate</masterLabel>
+            <translation>مَصْحوْب بأَعْراض - مرفوض للمشاركة</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Tracing Status --></label>
+        <name>HealthCloudGA__Contract_Tracing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>مكتملة</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>قيد التقدم</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoming</masterLabel>
+            <translation>واردة</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation>لا توجد إجابة</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>HealthCloudGA__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Decline to Specify</masterLabel>
+            <translation>رفض التحديد</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation>أنثى</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation>ذكر</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>آخر</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monitored at Home --></label>
+        <name>HealthCloudGA__Monitored_at_Home__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>لا</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>نعم</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>HealthCloudGA__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskType --></label>
+        <name>HealthCloudGA__TaskType__c</name>
+        <picklistValues>
+            <masterLabel>Administrative</masterLabel>
+            <translation>المسؤول</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation>سيريري</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonclinical</masterLabel>
+            <translation><!-- Nonclinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>أخرى</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncategorized</masterLabel>
+            <translation>الفئات</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Testing Status --></label>
+        <name>HealthCloudGA__Testing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Negative Test</masterLabel>
+            <translation>اختبار سلبي</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Test</masterLabel>
+            <translation>اختبار إيجابي</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Results Pending</masterLabel>
+            <translation>نتائج الاختبار معلقة</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Scheduled</masterLabel>
+            <translation>تمت جدولة الاختبار</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing Recommended</masterLabel>
+            <translation>تمت التوصية بالاختبار</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation>غير معروف</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

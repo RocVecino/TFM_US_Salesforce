@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age --></label>
+        <name>HealthCloudGA__Age__c</name>
+    </fields>
+    <fields>
+        <help>Ο στόχος που επιδιώκει να πετύχει αυτή η εργασία</help>
+        <label><!-- Goal --></label>
+        <name>HealthCloudGA__CarePlanGoal__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Το πρόβλημα που επιδιώκει να λύσει αυτή η εργασία</help>
+        <label><!-- Problem --></label>
+        <name>HealthCloudGA__CarePlanProblem__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Care Plan Template --></label>
+        <name>HealthCloudGA__CarePlanTemplate__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>HealthCloudGA__Category__c</name>
+        <picklistValues>
+            <masterLabel>Counselling</masterLabel>
+            <translation>Συμβουλευτική</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnosis</masterLabel>
+            <translation>Διαγνωστικός έλεγχος</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exercise</masterLabel>
+            <translation>Άσκηση</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vaccination</masterLabel>
+            <translation>Εμβολιασμός</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition Status --></label>
+        <name>HealthCloudGA__Conditions_Status__c</name>
+        <picklistValues>
+            <masterLabel>Asymptomatic</masterLabel>
+            <translation>Ασυμπτωματικός</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asymptomatic - Declined to Participate</masterLabel>
+            <translation>Ασυμπτωματικός - Αρνήθηκε να συμμετάσχει</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cured</masterLabel>
+            <translation>Αποθεραπεύτηκε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluated - No Risk</masterLabel>
+            <translation>Αξιολογήθηκε - Κανένας κίνδυνος</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic</masterLabel>
+            <translation>Συμπτωματικός</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic - Declined to Participate</masterLabel>
+            <translation>Συμπτωματικός - Αρνήθηκε να συμμετάσχει</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Tracing Status --></label>
+        <name>HealthCloudGA__Contract_Tracing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Ολοκληρώθηκε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>Σε εξέλιξη</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoming</masterLabel>
+            <translation>Εισερχόμενο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation>Καμία απάντηση</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>HealthCloudGA__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Decline to Specify</masterLabel>
+            <translation>Άρνηση προσδιορισμού</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation>Γυναίκα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation>Άνδρας</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Άλλη</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monitored at Home --></label>
+        <name>HealthCloudGA__Monitored_at_Home__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Όχι</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ναι</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>HealthCloudGA__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskType --></label>
+        <name>HealthCloudGA__TaskType__c</name>
+        <picklistValues>
+            <masterLabel>Administrative</masterLabel>
+            <translation>Διοικητική</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation>Κλινική</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonclinical</masterLabel>
+            <translation><!-- Nonclinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Άλλη</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncategorized</masterLabel>
+            <translation>Εκτός κατηγοριοποίησης</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Testing Status --></label>
+        <name>HealthCloudGA__Testing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Negative Test</masterLabel>
+            <translation>Αρνητικό τεστ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Test</masterLabel>
+            <translation>Θετικό τεστ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Results Pending</masterLabel>
+            <translation>Εκκρεμούν τα αποτελέσματα του τεστ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Scheduled</masterLabel>
+            <translation>Προγραμματισμένο τεστ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing Recommended</masterLabel>
+            <translation>Συνιστάται τεστ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation>Άγνωστο</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

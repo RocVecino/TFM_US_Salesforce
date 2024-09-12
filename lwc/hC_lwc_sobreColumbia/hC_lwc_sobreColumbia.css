@@ -1,0 +1,124 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.hero-image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.hero-text-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.hero-text-container h1 {
+    font-size: 1.8rem; /* Smaller header size */
+    color: #004f91; /* Dark blue for header */
+}
+
+.hero-text-container p {
+    font-size: 0.9rem; /* Smaller paragraph size */
+    color: #333; /* Dark gray for text */
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.content-block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content-text {
+    flex: 1;
+    padding: 10px; /* Reduced padding */
+}
+
+.content-text h2 {
+    color: #004f91;
+    font-size: 1.3rem; /* Smaller subheading size */
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.content-text p {
+    font-size: 0.8rem; /* Smaller paragraph size */
+    color: #333;
+}
+
+.content-image {
+    flex: 1;
+    text-align: center;
+}
+
+.content-image img {
+    width: 100%;
+    max-width: 300px; /* Smaller maximum width for images */
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.customer-service {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Space above the section */
+}
+
+.customer-service h2 {
+    font-size: 1.5rem; /* Font size for the section title */
+    color: #004f91; /* Dark blue for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between; /* Space out the contact items */
+    margin-bottom: 20px; /* Space below the contact info section */
+}
+
+.contact-item {
+    flex: 1;
+    margin-right: 20px; /* Space between contact items */
+}
+
+.contact-item:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.contact-item h3 {
+    font-size: 1.2rem; /* Font size for contact type */
+    color: #004f91; /* Dark blue for contact type */
+    margin-bottom: 5px; /* Space below the contact type */
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center items vertically */
+}
+
+.contact-item .icon {
+    margin-right: 8px; /* Space between the icon and text */
+}
+
+.contact-item p {
+    font-size: 1rem; /* Font size for contact numbers */
+    color: #333; /* Dark gray for text */
+    margin: 0; /* Remove default margin */
+}

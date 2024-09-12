@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age --></label>
+        <name>HealthCloudGA__Age__c</name>
+    </fields>
+    <fields>
+        <help>Mål denne oppgaven er opprettet for</help>
+        <label><!-- Goal --></label>
+        <name>HealthCloudGA__CarePlanGoal__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Problem denne oppgaven er opprettet for</help>
+        <label><!-- Problem --></label>
+        <name>HealthCloudGA__CarePlanProblem__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Care Plan Template --></label>
+        <name>HealthCloudGA__CarePlanTemplate__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>HealthCloudGA__Category__c</name>
+        <picklistValues>
+            <masterLabel>Counselling</masterLabel>
+            <translation>Rådgivning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnosis</masterLabel>
+            <translation>Diagnose</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exercise</masterLabel>
+            <translation>Trening</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vaccination</masterLabel>
+            <translation>Vaksinasjon</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Condition Status --></label>
+        <name>HealthCloudGA__Conditions_Status__c</name>
+        <picklistValues>
+            <masterLabel>Asymptomatic</masterLabel>
+            <translation>Symptomfri</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asymptomatic - Declined to Participate</masterLabel>
+            <translation>Symptomfri - Avslo å delta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cured</masterLabel>
+            <translation>Friskmeldt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluated - No Risk</masterLabel>
+            <translation>Evaluert - Ingen risiko</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic</masterLabel>
+            <translation>Med symptomer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symptomatic - Declined to Participate</masterLabel>
+            <translation>Med symptomer - Avslo å delta</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Tracing Status --></label>
+        <name>HealthCloudGA__Contract_Tracing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Fullført</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>Pågår</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoming</masterLabel>
+            <translation>Innkommende</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation>Ikke svart</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>HealthCloudGA__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Decline to Specify</masterLabel>
+            <translation>Avslå for å angi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation>Kvinne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation>Mann</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Annet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monitored at Home --></label>
+        <name>HealthCloudGA__Monitored_at_Home__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nei</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>HealthCloudGA__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskType --></label>
+        <name>HealthCloudGA__TaskType__c</name>
+        <picklistValues>
+            <masterLabel>Administrative</masterLabel>
+            <translation>Administrativ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation>Klinisk</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonclinical</masterLabel>
+            <translation><!-- Nonclinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Annet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncategorized</masterLabel>
+            <translation>Ikke kategorisert</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Testing Status --></label>
+        <name>HealthCloudGA__Testing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Negative Test</masterLabel>
+            <translation>Negativ test</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Test</masterLabel>
+            <translation>Positiv test</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Results Pending</masterLabel>
+            <translation>Venter på testresultater</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Scheduled</masterLabel>
+            <translation>Test planlagt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing Recommended</masterLabel>
+            <translation>Testing anbefales</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation>Ukjent</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

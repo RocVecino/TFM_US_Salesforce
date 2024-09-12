@@ -1,0 +1,141 @@
+.header {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px 0; /* Espacio arriba y abajo de la cabecera */
+}
+
+.header h2 {
+    color: grey;
+    font-weight: bold;
+    font-size: 2.5rem; /* Tamaño del texto más grande */
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al principio */
+    gap: 20px; /* Espacio entre el texto y la imagen */
+    padding: 20px; /* Espacio alrededor del contenido */
+    max-width: 1000px; /* Ancho máximo del contenedor para centrarlo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.text-content {
+    flex: 1; /* El contenedor del texto tomará el espacio disponible */
+    max-width: 60%; /* Ajusta el ancho máximo del texto */
+    display: flex; /* Usar flexbox para el contenido interno */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+}
+
+.main-text {
+    color: grey; /* Color gris para el texto principal */
+    font-size: 1.2rem; /* Tamaño del texto más pequeño */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    margin: 0 0 10px 0; /* Espacio debajo del primer párrafo */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Coloca el texto y el botón en una columna */
+    align-items: flex-start; /* Alinea al inicio (izquierda) */
+    gap: 10px; /* Espacio entre el texto y el botón */
+}
+
+.secondary-text {
+    color: #0000FF; /* Color azul para el texto secundario */
+    font-size: 1.2rem; /* Tamaño del texto más pequeño */
+    font-weight: bold; /* Texto en negrita */
+    margin: 0; /* Elimina el margen para alinear con el párrafo anterior */
+}
+
+.button-wrapper {
+    display: flex; /* Usar flexbox para alinear el botón */
+    justify-content: flex-start; /* Alinea el botón a la derecha */
+    width: 100%; /* Ocupa todo el ancho disponible en su contenedor */
+    gap: 20px; /* Espacio entre el botón y el borde derecho */
+    margin-top: 10px; /* Espacio arriba del botón */
+}
+
+.cta-button {
+    background-color: #0000FF; /* Color de fondo azul para el botón */
+    color: #fff; /* Color del texto del botón en blanco */
+    border: none; /* Sin borde para el botón */
+    padding: 15px 30px; /* Tamaño del botón con relleno ajustado */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    font-size: 1.2rem; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    display: flex; /* Usar flexbox para el contenido interno del botón */
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.cta-button lightning-icon {
+    font-size: 1.2rem; /* Tamaño del ícono */
+}
+
+.cta-button:hover {
+    background-color: #0000cc; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+.content img {
+    max-width: 400px; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 2px solid #ddd; /* Borde fino */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto dentro de las cajas */
+}
+
+.grid-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Nueva sección de iconos y descripciones */
+.icon-description-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1400px; /* Aumenta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.icon-description-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px; /* Ajusta el ancho del contenedor */
+}
+
+.icon-description-item lightning-icon {
+    margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.icon-description-item p {
+    font-size: 0.9rem; /* Tamaño de letra más pequeña */
+    color: #666;
+}

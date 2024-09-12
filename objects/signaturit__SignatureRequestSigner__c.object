@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Target signers for a signature request</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>signaturit__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Related Account / PersonalAccount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Related Account / PersonalAccount</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Signature Request signers</relationshipLabel>
+        <relationshipName>Signature_Request_signers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Related signer contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Related signer contact</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Signature Request signers</relationshipLabel>
+        <relationshipName>SignatureRequestSigners</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__Email__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External signer&apos;s email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>External signer&apos;s email</inlineHelpText>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Related signer lead record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Related signer lead record</inlineHelpText>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Signature Request signers</relationshipLabel>
+        <relationshipName>SignatureRequestSigners</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__LongName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Not truncated name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Not truncated name</inlineHelpText>
+        <label>Long name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the external signer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the external signer</inlineHelpText>
+        <label>Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__NumberCancelDocuments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of cancel signatures</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of cancel signatures</inlineHelpText>
+        <label>Number Cancel Signatures</label>
+        <summarizedField>signaturit__SignatureSignerFile__c.signaturit__CancelCount__c</summarizedField>
+        <summaryForeignKey>signaturit__SignatureSignerFile__c.signaturit__SignatureRequestSigner__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__NumberCompletedDocuments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of completed signatures</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of completed signatures</inlineHelpText>
+        <label>Number Completed Signatures</label>
+        <summarizedField>signaturit__SignatureSignerFile__c.signaturit__CompletedCount__c</summarizedField>
+        <summaryForeignKey>signaturit__SignatureSignerFile__c.signaturit__SignatureRequestSigner__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__NumberDocuments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of signatures</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of signatures</inlineHelpText>
+        <label>Number Signatures</label>
+        <summaryForeignKey>signaturit__SignatureSignerFile__c.signaturit__SignatureRequestSigner__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__Phone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Signer&apos;s phone</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Signer&apos;s phone</inlineHelpText>
+        <label>Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>signaturit__Progress__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( signaturit__NumberCompletedDocuments__c == signaturit__NumberDocuments__c , $Label.signaturit__SIG_StatusCompleted, IF( signaturit__NumberCancelDocuments__c &gt;= 1 , $Label.signaturit__SIG_StatusCanceled, IF( CONTAINS(signaturit__SignatureRequest__r.signaturit__Progress__c , $Label.signaturit__SIG_StatusCanceled), $Label.signaturit__SIG_StatusCanceled, $Label.signaturit__SIG_StatusInProgress)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Progress</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__SignatureRequest__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Parent signature request</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Parent signature request</inlineHelpText>
+        <label>Signature Request</label>
+        <referenceTo>signaturit__SignatureRequest__c</referenceTo>
+        <relationshipLabel>Signature Request Signers</relationshipLabel>
+        <relationshipName>SignatureRequestSigners</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>signaturit__SignerName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Link to the record using full name</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(
+  &quot;/&quot; &amp; Id,
+  signaturit__LongName__c,
+  &quot;_self&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Link to the record using full name</inlineHelpText>
+        <label>Signer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>signaturit__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sirgner type of the Signer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sirgner type of the Signer</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>signer</fullName>
+                    <default>false</default>
+                    <label>Signer</label>
+                </value>
+                <value>
+                    <fullName>validator</fullName>
+                    <default>false</default>
+                    <label>Validator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>signaturit__User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Related signer user record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Related signer user record</inlineHelpText>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>SignatureRequestSigners</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Firmante de Solicitud de Firma</label>
+    <listViews>
+        <fullName>signaturit__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Signature Request signer Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Firmantes de Solicitud de Firma</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

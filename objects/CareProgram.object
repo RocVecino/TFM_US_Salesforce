@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>BudgetAmount</fullName>
+        <inlineHelpText>Approved budget for the care program.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Category</fullName>
+        <inlineHelpText>Specifies the category of the care program.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <inlineHelpText>Short description explaining the program.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <inlineHelpText>The date when the program ends.   </inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HC_fld_checkEdadLimiteContract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>¿Con Edad Limite de Contratación?</description>
+        <externalId>false</externalId>
+        <label>¿Con Edad Limite de Contratación?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HC_fld_checkEdadMaxPerm__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>¿Edad Máxima de Permanencia?</description>
+        <externalId>false</externalId>
+        <label>¿Edad Máxima de Permanencia?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HC_fld_checkPeriodoCarencia__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>¿Con Periodos de Carencia?</description>
+        <externalId>false</externalId>
+        <label>¿Con Periodos de Carencia?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HC_fld_descFormPagoAnual__c</fullName>
+        <description>Descuentos por Forma de Pago Anual</description>
+        <externalId>false</externalId>
+        <label>Descuentos por Forma de Pago Anual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>HC_fld_descFormPagoTrimestral__c</fullName>
+        <description>Descuentos por Forma de Pago Trimestral</description>
+        <externalId>false</externalId>
+        <label>Descuentos por Forma de Pago Trimestral</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>HC_fld_edadLimiteContratacion__c</fullName>
+        <description>Edad Límite de Contratación</description>
+        <externalId>false</externalId>
+        <label>Edad Límite de Contratación</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HC_fld_periodoCarenciaDiagAltaTec__c</fullName>
+        <description>Periodo Carencia Diagnóstico de alta tecnología</description>
+        <externalId>false</externalId>
+        <label>Periodo Carencia Diagnóstico de alta tec</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HC_pl_periodoCarencia</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HC_fld_periodoCarenciaPodologia__c</fullName>
+        <description>Periodo Carencia Podología</description>
+        <externalId>false</externalId>
+        <label>Periodo Carencia Podología</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HC_pl_periodoCarencia</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HC_fld_periodoCarenciaPrepAsistParto__c</fullName>
+        <description>Periodo Carencia Preparación y asistencia al parto</description>
+        <externalId>false</externalId>
+        <label>Periodo Carencia Preparación y asistenci</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HC_pl_periodoCarencia</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HC_fld_periodoCarenciaTratEsp__c</fullName>
+        <description>Periodo Carencia Tratamientos especiales</description>
+        <externalId>false</externalId>
+        <label>Periodo Carencia Tratamientos especiales</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HC_pl_periodoCarencia</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HC_fld_periodoCarenciaTratInfertilidad__c</fullName>
+        <description>Periodo Carencia Tratamiento infertilidad</description>
+        <externalId>false</externalId>
+        <label>Periodo Carencia Tratamiento infertilida</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HC_pl_periodoCarencia</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__Monitoring_Duration_Days__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Monitoring Duration Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentProgramId</fullName>
+        <inlineHelpText>Name of the program that this program is part of, if any.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SourceSystem</fullName>
+        <inlineHelpText>The name of the system this record came from.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SourceSystemIdentifier</fullName>
+        <inlineHelpText>ID of an external record on its source system.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SponsorId</fullName>
+        <inlineHelpText>Name of the third-party program sponsor.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+        <inlineHelpText>The date when the program begins.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <inlineHelpText>Status of the program.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>All_CarePrograms</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Care Programs</label>
+    </listViews>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Care_Program</fullName>
+        <active>true</active>
+        <label>Care Program</label>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaDiagAltaTec__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaPodologia__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaPrepAsistParto__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaTratEsp__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaTratInfertilidad__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>%5F%5FMISSING LABEL%5F%5F PropertyFile - val Canceled not found in section CareProgramStatus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>HC_rt_seguroSalud</fullName>
+        <active>true</active>
+        <description>Programa Seguro Salud</description>
+        <label>Programa Seguro Salud</label>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaDiagAltaTec__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaPodologia__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaPrepAsistParto__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaTratEsp__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HC_fld_periodoCarenciaTratInfertilidad__c</picklist>
+            <values>
+                <fullName>12 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8 meses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9 meses</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>%5F%5FMISSING LABEL%5F%5F PropertyFile - val Canceled not found in section CareProgramStatus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ParentProgram</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sponsor</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ParentProgram</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Sponsor</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ParentProgram</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Sponsor</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ParentProgram</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sponsor</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

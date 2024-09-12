@@ -1,0 +1,125 @@
+<template>
+    <lightning-tabset>
+        <template for:each={resultWrapperLst} for:item="careProgram">
+            <lightning-tab key={careProgram.name} label={careProgram.name} onactive={handleActive}>
+                <div class="header">
+                    <h2>{careProgram.name}</h2>
+                </div>
+                <div class="content">
+                    <div class="text-content">
+                        <p class="main-text">{careProgram.descripcion}</p>
+                        <div class="button-container">
+                            <p class="secondary-text">Por solo {careProgram.amount}€/mes por persona.</p>
+                            <!--<button class="cta-button"><lightning-icon icon-name="utility:phone" alternative-text="Phone icon" size="small"></lightning-icon>Te llamamos?</button>-->
+                            <div class="button-wrapper">
+                                <lightning-button
+                                    variant="brand"
+                                    label="Te llamamos?"
+                                    title="Te llamamos?"
+                                    onclick={handleLlamar}
+                                    icon-name="utility:call"
+                                    class="slds-p-around_xxx-small">
+                                </lightning-button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src={careProgram.imagen}>
+                </div>
+                <template lwc:if={careProgram.tieneCovertura}>
+                    <div class="header">
+                        <h2>Coberturas del seguro {careProgram.name}</h2>
+                    </div>
+                    <div class="grid-container">
+                        <template for:each={careProgram.listaCoverturas} for:item="covertura">
+                            <div key={covertura.name} class="grid-item">
+                                <h3>{covertura.name}</h3>
+                                <p>{covertura.descripcion}</p>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+                <template lwc:if={careProgram.mostrarSeccion}>
+                    <div class="header">
+                        <h2>¿Qué necesitas para contratar?</h2>
+                        <p>Contratar tu seguro de salud con Columbia es muy sencillo. Solo tienes que tener en cuenta:</p>
+                    </div>
+                    <div class="icon-description-wrapper">
+                        <template lwc:if={careProgram.checkEdadLimite}>
+                            <div class="icon-description-item">
+                                <lightning-icon icon-name="utility:people" size="large"></lightning-icon>
+                                <h3>Edad de contratación</h3>
+                                <p>Edad límite: {careProgram.edadLimite}</p>
+                                <div if:false={careProgram.checkEdadMaxPermanencia}>
+                                    <p>Sin edad máxima de permanencia</p>
+                                </div>
+                            </div>
+                        </template>
+                        <template lwc:if={careProgram.checkPeriodoCarencia}>
+                            <div class="icon-description-item">
+                                <lightning-icon icon-name="utility:expired" size="large"></lightning-icon>
+                                <h3>Periodos de carencia</h3>
+                                <div if:true={careProgram.periodoCalenciaPodologia}>
+                                    <p>Podología: {careProgram.periodoCalenciaPodologia}</p>
+                                </div>
+                                <div if:true={careProgram.periodoCarenciaDiagAltaTec}>
+                                    <p>Diagnóstico de alta tecnología: {careProgram.periodoCarenciaDiagAltaTec}</p>
+                                </div>
+                                <div if:true={careProgram.periodoCarenciaTratEspec}>
+                                    <p>Tratamientos especiales: {careProgram.periodoCarenciaTratEspec}</p>
+                                </div>
+                                <div if:true={careProgram.periodoCarenciaPrepAsistParto}>
+                                    <p>Preparación y asistencia al parto: {careProgram.periodoCarenciaPrepAsistParto}</p>
+                                </div>
+                                <div if:true={careProgram.periodoCarenciaTratInfertilidad}>
+                                    <p>Tratamiento infertilidad: {careProgram.periodoCarenciaTratInfertilidad}</p>
+                                </div>
+                            </div>
+                        </template>
+                        <div class="icon-description-item">
+                            <lightning-icon icon-name="utility:discounts" size="large"></lightning-icon>
+                            <h3>Descuentos por forma de pago</h3>
+                            <div if:true={careProgram.descFormPagoTrim}>
+                                <p>Por pago trimestral: {careProgram.descFormPagoTrim}</p>
+                            </div>
+                            <div if:true={careProgram.descFormPagoAnual}>
+                                <p>Por pago anual: {careProgram.descFormPagoAnual}</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+
+            </lightning-tab>
+        </template>
+        <!-- Modal para recoger información del usuario -->
+        <template if:true={isModalOpen}>
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!-- Modal/Popup Header -->
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                            <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 class="slds-text-heading_medium">¡Nosotros te llamamos!</h2>
+                    </header>
+
+                    <!-- Modal/Popup Body -->
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <lightning-input label="Nombre" value={userName} onchange={handleInputChange} data-id="name"></lightning-input>
+                        <lightning-input label="Apellidos" value={apellidos} onchange={handleInputChange} data-id="apellidos"></lightning-input>
+                        <lightning-input label="Correo Electrónico" type="email" value={userEmail} onchange={handleInputChange} data-id="email"></lightning-input>
+                        <lightning-input label="Teléfono" type="tel" value={userPhone} onchange={handleInputChange} data-id="phone"></lightning-input>
+                        <lightning-input type="checkbox" label="Quiero recibir información sobre productos y ofertas de Columbia" checked={wantsInfo} onchange={handleInputChange} data-id="wantsInfo"></lightning-input>
+                    </div>
+
+                    <!-- Modal/Popup Footer -->
+                    <footer class="slds-modal__footer">
+                        <lightning-button variant="neutral" label="Cancelar" onclick={closeModal}></lightning-button>
+                        <lightning-button variant="brand" label="Guardar" onclick={handleSave}></lightning-button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </lightning-tabset>
+</template>

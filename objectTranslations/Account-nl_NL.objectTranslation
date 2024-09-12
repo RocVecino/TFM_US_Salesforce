@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- New External Member​ --></label>
+        <name>HealthCloudGA__QuickAddIndividual</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Código de la cuenta bancaria (IBAN) --></label>
+        <name>HC_fld_cuentaBancaria__c</name>
+    </fields>
+    <fields>
+        <label><!-- D.N.I --></label>
+        <name>HC_fld_documentoIdentidad__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estado Civil --></label>
+        <name>HC_fld_estadoCivil__c</name>
+        <picklistValues>
+            <masterLabel>Casado</masterLabel>
+            <translation><!-- Casado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divorciado</masterLabel>
+            <translation><!-- Divorciado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soltero</masterLabel>
+            <translation><!-- Soltero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viudo</masterLabel>
+            <translation><!-- Viudo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Frecuencia de Pago --></label>
+        <name>HC_fld_frecuenciaPago__c</name>
+        <picklistValues>
+            <masterLabel>Anual</masterLabel>
+            <translation><!-- Anual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mensual</masterLabel>
+            <translation><!-- Mensual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semestral</masterLabel>
+            <translation><!-- Semestral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trimestral</masterLabel>
+            <translation><!-- Trimestral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Código de identificación del banco (BIC) --></label>
+        <name>HC_fld_identificacionBanco__c</name>
+        <picklistValues>
+            <masterLabel>BBVA (BBVAESMMXXX)</masterLabel>
+            <translation><!-- BBVA (BBVAESMMXXX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankinter (BKBKESMMXXX)</masterLabel>
+            <translation><!-- Bankinter (BKBKESMMXXX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caixa (CAIXESBBXXX)</masterLabel>
+            <translation><!-- Caixa (CAIXESBBXXX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sabadell (BSABESBBXXX)</masterLabel>
+            <translation><!-- Sabadell (BSABESBBXXX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santander(BSCHESMMXXX)</masterLabel>
+            <translation><!-- Santander(BSCHESMMXXX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unicaja (UCJAES2MXXX)</masterLabel>
+            <translation><!-- Unicaja (UCJAES2MXXX) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preferencias de Comunicación --></label>
+        <name>HC_fld_preferenciasComunicacion__c</name>
+        <picklistValues>
+            <masterLabel>Correo Postal</masterLabel>
+            <translation><!-- Correo Postal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teléfono</masterLabel>
+            <translation><!-- Teléfono --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tipo Pago --></label>
+        <name>HC_fld_tipoPago__c</name>
+        <picklistValues>
+            <masterLabel>No domiciliada</masterLabel>
+            <translation><!-- No domiciliada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orden de Domiciliación</masterLabel>
+            <translation><!-- Orden de Domiciliación --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>HealthCloudGA__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gezondheidszorgplan voor deze patiënt</help>
+        <label><!-- Care Plan --></label>
+        <name>HealthCloudGA__CarePlan__c</name>
+        <relationshipLabel><!-- PatientAccounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>HealthCloudGA__Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Type --></label>
+        <name>HealthCloudGA__EnrollmentType__c</name>
+        <picklistValues>
+            <masterLabel>Dual</masterLabel>
+            <translation>Dubbel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESRD</masterLabel>
+            <translation>ESRD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FBDual</masterLabel>
+            <translation>FBDubbel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NonDual</masterLabel>
+            <translation>Niet dubbel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PBDual</masterLabel>
+            <translation>PBDubbel</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Individual ID --></label>
+        <name>HealthCloudGA__IndividualId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Type --></label>
+        <name>HealthCloudGA__IndividualType__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Groep</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation>Individu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geeft aan of een patiënt in een instelling zit.</help>
+        <label><!-- Institution --></label>
+        <name>HealthCloudGA__Institution__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of een patiënt binnen de richtlijnen voor een laag inkomen valt.</help>
+        <label><!-- Low Income --></label>
+        <name>HealthCloudGA__LowIncome__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of een patiënt in aanmerking komt voor medische hulp.</help>
+        <label><!-- Medicaid Eligibility Status --></label>
+        <name>HealthCloudGA__MedicaidEligibilityStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Record Number --></label>
+        <name>HealthCloudGA__MedicalRecordNumber__c</name>
+    </fields>
+    <fields>
+        <help>Nieuw lid of verlengd van vorig jaar.</help>
+        <label><!-- Medicare Enrollee --></label>
+        <name>HealthCloudGA__MedicareEnrollee__c</name>
+        <picklistValues>
+            <masterLabel>Continued</masterLabel>
+            <translation>Verlengd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Enrollee</masterLabel>
+            <translation>Nieuw ingeschrevene</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OREC --></label>
+        <name>HealthCloudGA__OREC__c</name>
+        <picklistValues>
+            <masterLabel>Age</masterLabel>
+            <translation>Leeftijd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disabled</masterLabel>
+            <translation>Invalide</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payer Type --></label>
+        <name>HealthCloudGA__PayerType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>HealthCloudGA__PrimaryContact__c</name>
+        <relationshipLabel><!-- Accounts (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>HealthCloudGA__SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <help>Identificeert het systeem dat de record heeft gemaakt, en eigenaar is van de rechten op updates ervan. De standaardwaarde wordt Health1 voor handmatig gemaakte records.</help>
+        <label><!-- Source System --></label>
+        <name>HealthCloudGA__SourceSystem__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxId --></label>
+        <name>HealthCloudGA__TaxId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>HC_ply_clienteSeguro</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Datos Económicos --></label>
+            <section>Datos Económicos</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Enroll in Care Program --></label>
+        <name>Enroll_in_Care_Program</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Pre-Enroll --></label>
+        <name>Pre_Enroll</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Represents a Care Program Sponsor --></description>
+        <label><!-- Care Program Sponsor --></label>
+        <name>CareProgramSponsor</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type para identificar a los Account de tipo Corredores de Seguros --></description>
+        <label><!-- Corredor Seguros --></label>
+        <name>HC_rt_corredorSeguros</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type para identificar a los Account de Empresas de tipo B2B --></description>
+        <label><!-- Cuenta de Empresa --></label>
+        <name>HC_rt_cuentaEmpresa</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type para identificar a los Account de Clientes de tipo B2C --></description>
+        <label><!-- Miembro Compañía --></label>
+        <name>HC_rt_miembroCompania</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a business or an organization --></description>
+        <label><!-- Business --></label>
+        <name>HealthCloudGA__IndustriesBusiness</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a Household --></description>
+        <label><!-- Household --></label>
+        <name>HealthCloudGA__IndustriesHousehold</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents an Individual --></description>
+        <label><!-- Individual --></label>
+        <name>HealthCloudGA__IndustriesIndividual</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a Payer --></description>
+        <label><!-- Payer --></label>
+        <name>HealthCloudGA__IndustriesPayer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a Payer --></description>
+        <label><!-- Payer --></label>
+        <name>IndustriesPayer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a Purchaser --></description>
+        <label><!-- Purchaser --></label>
+        <name>IndustriesPurchaser</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PersonAccount --></label>
+        <name>PersonAccount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TestRec --></label>
+        <name>TestRec</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The Individual record type can&apos;t be changed --></errorMessage>
+        <name>HealthCloudGA__NotAllowingConversionFromIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The record type can&apos;t be changed to Individual. --></errorMessage>
+        <name>HealthCloudGA__NotAllowingConversionToIndividual</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>Billing</name>
+    </webLinks>
+</CustomObjectTranslation>

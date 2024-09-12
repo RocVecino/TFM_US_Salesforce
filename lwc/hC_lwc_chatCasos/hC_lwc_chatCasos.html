@@ -1,0 +1,108 @@
+<template>
+    <div class="slds-grid slds-grid_align-end slds-p-around_medium">
+        <lightning-button-icon
+            icon-name="standard:live_chat"
+            alternative-text="Chat"
+            title="Start Chat"
+            variant="brand"
+            onclick={handleChatClick}>
+        </lightning-button-icon>
+    </div>
+    <!-- Chat Modal -->
+    <template if:true={openChat}>
+        <section role="dialog" tabindex="-1" class="chat-modal">
+            <div class="slds-modal__container chat-container">
+
+                <!-- Modal/Popup Header -->
+                <header class="slds-modal__header chat-header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeChatModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="Close"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 class="slds-text-heading_medium">Astro Chat</h2>
+                </header>
+
+                <!-- Modal/Popup Body -->
+                <div class="slds-modal__content slds-p-around_none chat-content">
+                    <!-- Chat Messages -->
+                    <div class="chat-messages">
+                        <div class="message bot-message">
+                            <p>Hola, soy Astro, su asistente virtual. ¿Podría decirme su teléfono?</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages">
+                        <template for:each={lstMensajesUsuario} for:item="mensaje">
+                            <div key={mensaje} class="message user-message">
+                                <p>{mensaje}</p>
+                            </div>
+                        </template>
+                    </div>
+
+                    <div if:true={checkSelectReasonCase}>
+                        <div class="chat-messages">
+                            <div class="message bot-message">
+                                <p>{mensajeClienteChatBot}</p>
+                            </div>
+                        </div>
+                        <div class="chat-messages">
+                            <div class="message bot-message">
+                                <p>Seleccione la razón de su consulta: </p>
+                                <lightning-combobox
+                                    value={value}
+                                    placeholder="Selecciona una Razón"
+                                    options={lstOptionsReasonCase}
+                                    onchange={handleChange} >
+                                    disabled = {disabledSelectReason}
+                                </lightning-combobox>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div if:true={showMostrarSegRazon}>
+                        <div class="chat-messages">
+                            <div class="message bot-message">
+                                <p>Un pasito más por favor, nos ayudaría un poco más de la razón.</p>
+                            </div>
+                        </div>
+                        <div class="chat-messages">
+                            <div class="message bot-message">
+                                <p>Seleccione el tipo de su consulta: </p>
+                                <lightning-combobox
+                                    value={value}
+                                    placeholder="Selecciona un valor"
+                                    options={lstOptiosSegReason}
+                                    onchange={handleChangeSegReason} >
+                                    disabled = {disabledSelectSegReason}
+                                </lightning-combobox>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div if:true={mostrarMensajeViaje}>
+                        <div class="chat-messages">
+                            <div class="message bot-message">
+                                <p>{mensajeViaje}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div if:true={mostrarMensajeCaso}>
+                        <div class="chat-messages">
+                            <div class="message bot-message">
+                                <p>{mensajeCaso}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Input -->
+                    <div class="chat-input-container">
+                        <lightning-input class="chat-input" placeholder="Escribe tu mensaje..." type="tel" disabled={checkInput} data-id="inputMensaje" value={userMessage}></lightning-input>
+                        <lightning-button-icon icon-name="utility:send" alternative-text="Send" variant="bare" onclick={sendMessage}></lightning-button-icon>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+</template>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ¿Con Edad Limite de Contratación? --></label>
+        <name>HC_fld_checkEdadLimiteContract__c</name>
+    </fields>
+    <fields>
+        <label><!-- ¿Edad Máxima de Permanencia? --></label>
+        <name>HC_fld_checkEdadMaxPerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- ¿Con Periodos de Carencia? --></label>
+        <name>HC_fld_checkPeriodoCarencia__c</name>
+    </fields>
+    <fields>
+        <label><!-- Descuentos por Forma de Pago Anual --></label>
+        <name>HC_fld_descFormPagoAnual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Descuentos por Forma de Pago Trimestral --></label>
+        <name>HC_fld_descFormPagoTrimestral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edad Límite de Contratación --></label>
+        <name>HC_fld_edadLimiteContratacion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Periodo Carencia Diagnóstico de alta tec --></label>
+        <name>HC_fld_periodoCarenciaDiagAltaTec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Periodo Carencia Podología --></label>
+        <name>HC_fld_periodoCarenciaPodologia__c</name>
+    </fields>
+    <fields>
+        <label><!-- Periodo Carencia Preparación y asistenci --></label>
+        <name>HC_fld_periodoCarenciaPrepAsistParto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Periodo Carencia Tratamientos especiales --></label>
+        <name>HC_fld_periodoCarenciaTratEsp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Periodo Carencia Tratamiento infertilida --></label>
+        <name>HC_fld_periodoCarenciaTratInfertilidad__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitoring Duration Days --></label>
+        <name>HealthCloudGA__Monitoring_Duration_Days__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Care Program --></label>
+        <name>Care_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Programa Seguro Salud --></description>
+        <label><!-- Programa Seguro Salud --></label>
+        <name>HC_rt_seguroSalud</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,31 @@
+<template>
+    <lightning-tabset>
+        <div if:true={showTabPortalGestor}>
+            <lightning-tab label="Portal del Gestor">
+                <lightning-tabset>
+                    <lightning-tab label="Clientes Potenciales">
+                        <c-h-C_lwc_tabla-Leads></c-h-C_lwc_tabla-Leads>
+                    </lightning-tab>
+                    <lightning-tab label="Clientes">
+                        <c-hc_lwc_tabla-Clientes></c-hc_lwc_tabla-Clientes>
+                    </lightning-tab>
+                </lightning-tabset>
+            </lightning-tab>
+        </div>
+        <div if:true={showTabProgramaSalud}>
+            <lightning-tab label="Programas de Salud" >
+                <c-h-C_lwc_care-Programs></c-h-C_lwc_care-Programs>
+            </lightning-tab>
+        </div>
+        <div if:true={showSobreColumbia}>
+            <lightning-tab label="Sobre Columbia">
+                <c-h-C_lwc_sobre-Columbia></c-h-C_lwc_sobre-Columbia>
+            </lightning-tab>
+        </div>
+        <div if:true={showTabPortalTareasPendientes}>
+            <lightning-tab label="¿Tiene tareas Pendientes?">
+                <c-h-C_lwc_acciones-Cliente-Potencial></c-h-C_lwc_acciones-Cliente-Potencial>
+            </lightning-tab>
+        </div>
+    </lightning-tabset>
+</template>
