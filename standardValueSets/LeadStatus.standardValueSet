@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Closed - Converted</fullName>
+        <default>false</default>
+        <label>Closed - Converted</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Not Converted</fullName>
+        <default>false</default>
+        <label>Closed - Not Converted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>New - Not Contacted</fullName>
+        <default>false</default>
+        <label>New - Not Contacted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Nurturing - Contacted</fullName>
+        <default>false</default>
+        <label>Nurturing - Contacted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Working - Contacted</fullName>
+        <default>false</default>
+        <label>Working - Contacted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitud de Llamada</fullName>
+        <default>true</default>
+        <label>Solicitud de Llamada</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>En proceso de Contratación</fullName>
+        <default>false</default>
+        <label>En proceso de Contratación</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Pendiente Documentación</fullName>
+        <default>false</default>
+        <label>Pendiente Documentación</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Rechazada</fullName>
+        <default>false</default>
+        <label>Rechazada</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Esperando Firma</fullName>
+        <default>false</default>
+        <label>Esperando Firma</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contrato Generado</fullName>
+        <default>false</default>
+        <label>Contrato Generado</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contrato Firmado</fullName>
+        <default>false</default>
+        <label>Contrato Firmado</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Pendiente Generar Contrato</fullName>
+        <default>false</default>
+        <label>Pendiente Generar Contrato</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>
