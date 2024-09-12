@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Physical Therapy Session</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Physical Therapy Sessions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Physical Therapy Sessions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Visible on Patient Card --></label>
+        <name>Is_Visible_on_Patient_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Date --></label>
+        <name>Session_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Therapy Type --></label>
+        <name>Therapy_Type__c</name>
+        <picklistValues>
+            <masterLabel>Joint Pain</masterLabel>
+            <translation><!-- Joint Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Operative Care</masterLabel>
+            <translation><!-- Post-Operative Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spinal Injury</masterLabel>
+            <translation><!-- Spinal Injury --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+</CustomObjectTranslation>

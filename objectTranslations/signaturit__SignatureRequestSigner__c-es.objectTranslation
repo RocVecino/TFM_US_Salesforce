@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Firmante de Solicitud de Firma</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Firmantes de Solicitud de Firma</value>
+    </caseValues>
+    <fields>
+        <help><!-- Related Account / PersonalAccount --></help>
+        <label><!-- Account --></label>
+        <name>signaturit__Account__c</name>
+        <relationshipLabel><!-- Signature Request signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Related signer contact --></help>
+        <label><!-- Contact --></label>
+        <name>signaturit__Contact__c</name>
+        <relationshipLabel><!-- Signature Request signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- External signer&apos;s email --></help>
+        <label><!-- Email --></label>
+        <name>signaturit__Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Related signer lead record --></help>
+        <label><!-- Lead --></label>
+        <name>signaturit__Lead__c</name>
+        <relationshipLabel><!-- Signature Request signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Not truncated name --></help>
+        <label><!-- Long name --></label>
+        <name>signaturit__LongName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the external signer --></help>
+        <label><!-- Name --></label>
+        <name>signaturit__Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of cancel signatures --></help>
+        <label><!-- Number Cancel Signatures --></label>
+        <name>signaturit__NumberCancelDocuments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of completed signatures --></help>
+        <label><!-- Number Completed Signatures --></label>
+        <name>signaturit__NumberCompletedDocuments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of signatures --></help>
+        <label><!-- Number Signatures --></label>
+        <name>signaturit__NumberDocuments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signer&apos;s phone --></help>
+        <label><!-- Phone --></label>
+        <name>signaturit__Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progress --></label>
+        <name>signaturit__Progress__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent signature request --></help>
+        <label><!-- Signature Request --></label>
+        <name>signaturit__SignatureRequest__c</name>
+        <relationshipLabel><!-- Signature Request Signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Link to the record using full name --></help>
+        <label><!-- Signer Name --></label>
+        <name>signaturit__SignerName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sirgner type of the Signer --></help>
+        <label><!-- Type --></label>
+        <name>signaturit__Type__c</name>
+        <picklistValues>
+            <masterLabel>Signer</masterLabel>
+            <translation>Firmante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validator</masterLabel>
+            <translation>Validador</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Related signer user record --></help>
+        <label><!-- User --></label>
+        <name>signaturit__User__c</name>
+        <relationshipLabel><!-- Signature Request Signers --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+</CustomObjectTranslation>

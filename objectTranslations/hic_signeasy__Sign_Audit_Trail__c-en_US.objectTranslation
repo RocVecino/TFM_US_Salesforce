@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action Date --></label>
+        <name>hic_signeasy__Action_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>hic_signeasy__Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Address --></label>
+        <name>hic_signeasy__IP_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>hic_signeasy__Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Transaction --></label>
+        <name>hic_signeasy__Sign_Transaction__c</name>
+        <relationshipLabel><!-- Sign Audit Trails --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>hic_signeasy__Type__c</name>
+        <picklistValues>
+            <masterLabel>ACCEPT</masterLabel>
+            <translation><!-- ACCEPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLETE</masterLabel>
+            <translation><!-- COMPLETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CREATE</masterLabel>
+            <translation><!-- CREATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DECLINED</masterLabel>
+            <translation><!-- DECLINED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDIT</masterLabel>
+            <translation><!-- EDIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PERSON</masterLabel>
+            <translation><!-- IN PERSON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REASSIGN</masterLabel>
+            <translation><!-- REASSIGN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SENT</masterLabel>
+            <translation><!-- SENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIEWED</masterLabel>
+            <translation><!-- VIEWED --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

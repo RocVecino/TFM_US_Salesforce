@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Content Document Id --></label>
+        <name>hic_signeasy__Content_Document_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Version Id --></label>
+        <name>hic_signeasy__Content_Version_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Order --></label>
+        <name>hic_signeasy__Document_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Transaction --></label>
+        <name>hic_signeasy__Sign_Transaction__c</name>
+        <relationshipLabel><!-- Sign Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>hic_signeasy__Type__c</name>
+        <picklistValues>
+            <masterLabel>Final</masterLabel>
+            <translation><!-- Final --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original</masterLabel>
+            <translation><!-- Original --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signer_Attachment</masterLabel>
+            <translation><!-- Signer_Attachment --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

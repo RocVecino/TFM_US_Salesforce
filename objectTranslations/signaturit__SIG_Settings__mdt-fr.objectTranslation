@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Signaturit Settings --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Signaturit Settings --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Delivery Type --></label>
+        <name>signaturit__DeliveryType__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the request expires --></help>
+        <label><!-- Expiration --></label>
+        <name>signaturit__Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- If expiration is set, the number of days to expiration --></help>
+        <label><!-- Days to Expiration --></label>
+        <name>signaturit__Expiration_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default reminder to set (picklist) --></help>
+        <label><!-- Reminder --></label>
+        <name>signaturit__Reminder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Días de la semana para enviar el recordatorio. --></help>
+        <label><!-- Reminder Days --></label>
+        <name>signaturit__Reminder_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rich Body --></label>
+        <name>signaturit__Rich_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store documents in Salesforce --></label>
+        <name>signaturit__SIG_SaveDocumentsInSalesforce__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Audit Trail In Salesforce --></label>
+        <name>signaturit__SaveAuditTrailInSalesforce__c</name>
+    </fields>
+    <fields>
+        <help><!-- Save signed documents in Salesforce --></help>
+        <label><!-- Save Signed In Salesforce --></label>
+        <name>signaturit__SaveSignedInSalesforce__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default sign type (picklist) --></help>
+        <label><!-- Sign Type --></label>
+        <name>signaturit__SignType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signature type to use in the process --></help>
+        <label><!-- SignatureType --></label>
+        <name>signaturit__SignatureType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>signaturit__Subject__c</name>
+    </fields>
+    <fields>
+        <help><!-- If SMS OTP should be used --></help>
+        <label><!-- Use SMS OTP --></label>
+        <name>signaturit__UseSMSOTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Sandbox --></label>
+        <name>signaturit__Use_Sandbox__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate if use the user token for the Signaturit connection. true - - &gt; Use User token, False- - &gt; Use Global Token --></help>
+        <label><!-- Use User Token --></label>
+        <name>signaturit__Use_User_Token__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Documento de Solicitud de Firma</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Documentos de Solicitud de Firma</value>
+    </caseValues>
+    <fields>
+        <help><!-- id of the File or Attachment grabbed from Salesforce --></help>
+        <label><!-- File Id --></label>
+        <name>signaturit__FileId__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Name --></label>
+        <name>signaturit__FileName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Not truncated name --></help>
+        <label><!-- Long name --></label>
+        <name>signaturit__LongName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of cancel signatures --></help>
+        <label><!-- Number Cancel Signatures --></label>
+        <name>signaturit__NumberCancelDocuments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of completed signatures --></help>
+        <label><!-- Number Completed Signatures --></label>
+        <name>signaturit__NumberCompletedDocuments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of signatures --></help>
+        <label><!-- Number Signatures --></label>
+        <name>signaturit__NumberDocuments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The order in which the document was selected in the wizard --></help>
+        <label><!-- Order Index --></label>
+        <name>signaturit__OrderIndex__c</name>
+    </fields>
+    <fields>
+        <help><!-- Origin of the file to be signed --></help>
+        <label><!-- Origin --></label>
+        <name>signaturit__Origin__c</name>
+        <picklistValues>
+            <masterLabel>ExistingSalesforce</masterLabel>
+            <translation>Existente en Salesforce</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upload</masterLabel>
+            <translation>Subido</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Progress --></label>
+        <name>signaturit__Progress__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent Signature request --></help>
+        <label><!-- Signature Request --></label>
+        <name>signaturit__SignatureRequest__c</name>
+        <relationshipLabel><!-- Signature Request Files --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- When using a Signaturit template, the name of the template --></help>
+        <label><!-- Template Name --></label>
+        <name>signaturit__TemplateName__c</name>
+    </fields>
+    <fields>
+        <help><!-- File type of the file to be signed --></help>
+        <label><!-- Type --></label>
+        <name>signaturit__Type__c</name>
+        <picklistValues>
+            <masterLabel>pdf</masterLabel>
+            <translation>pdf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>word</masterLabel>
+            <translation>Word</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Signing file comes from an upload or an existing Salesforce File --></description>
+        <label><!-- File --></label>
+        <name>signaturit__File</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- File singning request is from a Signaturit template --></description>
+        <label><!-- Template --></label>
+        <name>signaturit__Template</name>
+    </recordTypes>
+</CustomObjectTranslation>

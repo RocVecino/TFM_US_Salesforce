@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Documento de Firmante</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Documentos de Firmantes</value>
+    </caseValues>
+    <fields>
+        <help><!-- Audit trail file or attachment record Id --></help>
+        <label><!-- Audit trail attachment id --></label>
+        <name>signaturit__AuditTrailAttachmentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Count --></label>
+        <name>signaturit__CancelCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Count --></label>
+        <name>signaturit__CompletedCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order in which the document-signer was sended to the API --></help>
+        <label><!-- Order Index --></label>
+        <name>signaturit__OrderIndex__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent file of the relation --></help>
+        <label><!-- Signature Request File --></label>
+        <name>signaturit__SignatureRequestFile__c</name>
+        <relationshipLabel><!-- Signer Files --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Parent signer record --></help>
+        <label><!-- Signature Request Signer --></label>
+        <name>signaturit__SignatureRequestSigner__c</name>
+        <relationshipLabel><!-- Signer Files --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Id of the relation in Signaturit systems --></help>
+        <label><!-- Signaturit Id --></label>
+        <name>signaturit__SignaturitId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Record Id of the  signed document stored as Attachment or File --></help>
+        <label><!-- Signed document attachment Id --></label>
+        <name>signaturit__SignedDocumentAttachmentId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status for the signer regarding the file --></help>
+        <label><!-- Status --></label>
+        <name>signaturit__Status__c</name>
+        <picklistValues>
+            <masterLabel>Audit Trail Completed</masterLabel>
+            <translation>Auditoría completado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Canceled</masterLabel>
+            <translation>Documento cancelado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Completed</masterLabel>
+            <translation>Documento completado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Declined</masterLabel>
+            <translation>Documento rechazado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Expired</masterLabel>
+            <translation>Documento expirado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Opened</masterLabel>
+            <translation>Documento abierto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Signed</masterLabel>
+            <translation>Documento firmado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Bounced</masterLabel>
+            <translation>Correo electrónico rechazado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Deferred</masterLabel>
+            <translation>Correo electrónico aplazado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Delivered</masterLabel>
+            <translation>Correo electrónico enviado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Opened</masterLabel>
+            <translation>Correo electrónico abierto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Processed</masterLabel>
+            <translation>Correo electrónico procesado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder Email Delivered</masterLabel>
+            <translation>Enviado el correo de recordatorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder Email Opened</masterLabel>
+            <translation>Abierto el correo de recordatorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder Email Processed</masterLabel>
+            <translation>Procesado el correo de recordatorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validated</masterLabel>
+            <translation>Validado</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+</CustomObjectTranslation>

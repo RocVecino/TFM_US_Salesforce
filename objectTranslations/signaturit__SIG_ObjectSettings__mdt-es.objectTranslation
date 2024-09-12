@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Field API name  in the child records where the email will be grabbed --></help>
+        <label><!-- Email field --></label>
+        <name>signaturit__EmailField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field API name in the child records where the Name will be grabbed --></help>
+        <label><!-- Name field --></label>
+        <name>signaturit__NameField__c</name>
+    </fields>
+    <fields>
+        <help><!-- API name of the Salesforce object to configure --></help>
+        <label><!-- Object API Name --></label>
+        <name>signaturit__ObjectAPIName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field API in the child records where the phone will be grabbed --></help>
+        <label><!-- Phone field --></label>
+        <name>signaturit__PhoneField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Child relationship name fetch  recipients to the signature process --></help>
+        <label><!-- Relationship Name --></label>
+        <name>signaturit__RelationshipName__c</name>
+    </fields>
+</CustomObjectTranslation>

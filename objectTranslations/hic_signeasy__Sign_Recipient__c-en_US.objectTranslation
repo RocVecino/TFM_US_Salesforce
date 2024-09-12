@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Company --></label>
+        <name>hic_signeasy__Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decline Reason --></label>
+        <name>hic_signeasy__Decline_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Tag --></label>
+        <name>hic_signeasy__Document_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>hic_signeasy__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initials --></label>
+        <name>hic_signeasy__Initials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mail Sent --></label>
+        <name>hic_signeasy__Is_Mail_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Term And Condition Accepted --></label>
+        <name>hic_signeasy__Is_Term_And_Condition_Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>hic_signeasy__Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reassign Reason --></label>
+        <name>hic_signeasy__Reassign_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reassigner Name --></label>
+        <name>hic_signeasy__Reassigner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>hic_signeasy__RecipientName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Details --></label>
+        <name>hic_signeasy__Recipient_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>hic_signeasy__Role__c</name>
+        <picklistValues>
+            <masterLabel>CC</masterLabel>
+            <translation><!-- CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InPersonSigner</masterLabel>
+            <translation><!-- InPersonSigner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signer</masterLabel>
+            <translation><!-- Signer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sign Recipient --></label>
+        <name>hic_signeasy__Sign_Recipient__c</name>
+        <relationshipLabel><!-- SignRecipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Signed On --></label>
+        <name>hic_signeasy__Signed_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signer Index --></label>
+        <name>hic_signeasy__SignerIndex__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signer Index --></label>
+        <name>hic_signeasy__Signing_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>hic_signeasy__Status__c</name>
+        <picklistValues>
+            <masterLabel>CANCELLED</masterLabel>
+            <translation><!-- CANCELLED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLETE</masterLabel>
+            <translation><!-- COMPLETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DECLINED</masterLabel>
+            <translation><!-- DECLINED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRAFT</masterLabel>
+            <translation><!-- DRAFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REASSIGN</masterLabel>
+            <translation><!-- REASSIGN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SENT</masterLabel>
+            <translation><!-- SENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIEWED</masterLabel>
+            <translation><!-- VIEWED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>hic_signeasy__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Transaction --></label>
+        <name>hic_signeasy__Transaction__c</name>
+        <relationshipLabel><!-- Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- UUID --></label>
+        <name>hic_signeasy__UUID__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Reassign_Signer --></label>
+        <name>hic_signeasy__Reassign_Signer</name>
+    </webLinks>
+</CustomObjectTranslation>

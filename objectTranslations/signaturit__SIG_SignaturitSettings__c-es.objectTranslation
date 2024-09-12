@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Si el proceso de firma tiene caducidad. --></help>
+        <label><!-- Expiration --></label>
+        <name>signaturit__Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Si la caducidad está añadida, el numero de días hasta la fecha. --></help>
+        <label><!-- Days to Expiration --></label>
+        <name>signaturit__Expiration_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recordatorio predeterminado (lista de selección). --></help>
+        <label><!-- Reminder --></label>
+        <name>signaturit__Reminder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Días de la semana para enviar el recordatorio. --></help>
+        <label><!-- Reminder Days --></label>
+        <name>signaturit__Reminder_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store documents in Salesforce --></label>
+        <name>signaturit__SIG_SaveDocumentsInSalesforce__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Audit Trail In Salesforce --></label>
+        <name>signaturit__SaveAuditTrailInSalesforce__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guardar los documentos firmados en Salesforce. --></help>
+        <label><!-- Save Signed In Salesforce --></label>
+        <name>signaturit__SaveSignedInSalesforce__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tipo de firma por defecto (lista de selección). --></help>
+        <label><!-- Sign Type --></label>
+        <name>signaturit__SignType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tipo de firma para usar en el proceso. --></help>
+        <label><!-- SignatureType --></label>
+        <name>signaturit__SignatureType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Sandbox --></label>
+        <name>signaturit__Use_Sandbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use User Token --></label>
+        <name>signaturit__Use_User_Token__c</name>
+    </fields>
+</CustomObjectTranslation>

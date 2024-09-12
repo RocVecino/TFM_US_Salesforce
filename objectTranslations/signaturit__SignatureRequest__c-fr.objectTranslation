@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Demande de Signature</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Demandes de Signature</value>
+    </caseValues>
+    <fields>
+        <help><!-- Stores API error response if any --></help>
+        <label><!-- API error --></label>
+        <name>signaturit__APIError__c</name>
+    </fields>
+    <fields>
+        <label><!-- Archive Content --></label>
+        <name>signaturit__Archive_Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment Name --></label>
+        <name>signaturit__Attachment_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment Type --></label>
+        <name>signaturit__Attachment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Create new PDF Document</masterLabel>
+            <translation>Créer un nouveau document PDF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select</masterLabel>
+            <translation>Sélectionner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select PDF Document</masterLabel>
+            <translation>Sélectionnez le document PDF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Template</masterLabel>
+            <translation>Sélectionnez le modèle</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Audit Trail Attachment Id --></label>
+        <name>signaturit__AuditTrailAttachmentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Trail --></label>
+        <name>signaturit__AuditTrailURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Back to parent --></label>
+        <name>signaturit__BackToParent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body --></label>
+        <name>signaturit__Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Count --></label>
+        <name>signaturit__CompletedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>signaturit__Contact__c</name>
+        <relationshipLabel><!-- Signature requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created Month Year --></label>
+        <name>signaturit__CreatedMonthYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stores debug information for further troubleshooting --></help>
+        <label><!-- Debug log --></label>
+        <name>signaturit__Debug__c</name>
+    </fields>
+    <fields>
+        <help><!-- Delivery type for the signature request --></help>
+        <label><!-- Delivery Type --></label>
+        <name>signaturit__DeliveryType__c</name>
+        <picklistValues>
+            <masterLabel>email</masterLabel>
+            <translation>Email</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sms</masterLabel>
+            <translation>SMS</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End User Error --></label>
+        <name>signaturit__EndUserError__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set expiration --></help>
+        <label><!-- Expiration --></label>
+        <name>signaturit__Expiration__c</name>
+        <picklistValues>
+            <masterLabel>Dont expire</masterLabel>
+            <translation>ne pas expirer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expire</masterLabel>
+            <translation>Expirer</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If expiration is set, the number of days to expiration --></help>
+        <label><!-- Days to Expiration --></label>
+        <name>signaturit__Expiration_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Status Date --></label>
+        <name>signaturit__Last_Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minutes To Sign --></label>
+        <name>signaturit__MinutesToSign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of cancel signatures --></help>
+        <label><!-- Number Cancel Signatures --></label>
+        <name>signaturit__NumberCancelDocuments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of completed signatures --></help>
+        <label><!-- Number Completed Signatures --></label>
+        <name>signaturit__NumberCompletedDocuments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of signatures --></help>
+        <label><!-- Number Signatures --></label>
+        <name>signaturit__NumberDocuments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Id --></label>
+        <name>signaturit__ParentId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the parent record --></help>
+        <label><!-- Parent --></label>
+        <name>signaturit__ParentLink__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent record&apos;s name --></help>
+        <label><!-- Parent Name --></label>
+        <name>signaturit__ParentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progress --></label>
+        <name>signaturit__Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Email --></label>
+        <name>signaturit__Recipient_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Name --></label>
+        <name>signaturit__Recipient_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- When to send reminders --></help>
+        <label><!-- Reminder --></label>
+        <name>signaturit__Reminder__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personnalisé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation>Du quotidien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Jamais</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation>Hebdomadaire</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the reminders are custom, the days that will elapse until the reminder is sent --></help>
+        <label><!-- Reminder Days --></label>
+        <name>signaturit__Reminder_days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rich text body for the email sent --></help>
+        <label><!-- Rich Body --></label>
+        <name>signaturit__Rich_Body__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether audit trail from Signaturit should be stored in Salesforce --></help>
+        <label><!-- Save Audit Trail in Salesforce --></label>
+        <name>signaturit__SaveAuditTrailInSalesforce__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether signed document should be stored in Salesforce --></help>
+        <label><!-- Save Signed in Salesforce --></label>
+        <name>signaturit__SaveSignedInSalesforce__c</name>
+    </fields>
+    <fields>
+        <help><!-- Where to save the files in Salesforce (as files or as attachments) --></help>
+        <label><!-- Save type --></label>
+        <name>signaturit__SaveType__c</name>
+        <picklistValues>
+            <masterLabel>Attachment</masterLabel>
+            <translation>Joindre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>File</masterLabel>
+            <translation>Fichier</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Signing type for the request --></help>
+        <label><!-- Sign Type --></label>
+        <name>signaturit__SignType__c</name>
+        <picklistValues>
+            <masterLabel>Parallel</masterLabel>
+            <translation>Parallèle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secuential</masterLabel>
+            <translation>Séquentiel</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Signature type to use in the process --></help>
+        <label><!-- Signature Type --></label>
+        <name>signaturit__SignatureType__c</name>
+        <picklistValues>
+            <masterLabel>advanced</masterLabel>
+            <translation>Avancée</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>simple</masterLabel>
+            <translation>Simple</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signaturit Document Id --></label>
+        <name>signaturit__SignaturitDocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signaturit Id --></label>
+        <name>signaturit__SignaturitId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signed Document Attachment Id --></label>
+        <name>signaturit__SignedDocumentAttachmentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signed Document --></label>
+        <name>signaturit__SignedDocumentURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>signaturit__Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation>Annulé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Rempli</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation>Refusé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Erreur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Expiré</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In queue</masterLabel>
+            <translation>En file d&apos;attente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready</masterLabel>
+            <translation>Disponible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing</masterLabel>
+            <translation>signature</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Subject of the request --></help>
+        <label><!-- Subject --></label>
+        <name>signaturit__Subject__c</name>
+    </fields>
+    <fields>
+        <help><!-- If SMS OTP should be used --></help>
+        <label><!-- Use SMS OTP --></label>
+        <name>signaturit__UseSMSOTP__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Signature request targeting multiple signers and documents (v2) --></description>
+        <label><!-- Multiple --></label>
+        <name>signaturit__Multiple</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Simple signature request. For Salesforce classic (v1) --></description>
+        <label><!-- Simple --></label>
+        <name>signaturit__Simple</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
