@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Obtain Consent Form</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>High</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 20</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>true</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Obtain Consent Form</name>
+        <uniqueName>Obtain_Consent_Form_266ce491_1c4e_11ec_985b_71564296321d</uniqueName>
+    </actionPlanTemplateItem>
+    <description>Consent Form for Transfer of Patient</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Consent Form</name>
+    <targetEntityType>Lead</targetEntityType>
+    <uniqueName>Consent_Form_0f5702e3_1c4e_11ec_985b_635fc6ce498b</uniqueName>
+</ActionPlanTemplate>

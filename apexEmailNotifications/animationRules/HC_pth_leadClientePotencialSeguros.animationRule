@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animationFrequency>always</animationFrequency>
+    <developerName>HC_pth_leadClientePotencialSeguros</developerName>
+    <isActive>true</isActive>
+    <masterLabel>Lead Cliente Potencial Seguros</masterLabel>
+    <recordTypeContext>Custom</recordTypeContext>
+    <recordTypeName>HC_rt_cPotencialMbrSeguro</recordTypeName>
+    <sobjectType>Lead</sobjectType>
+    <targetField>Status</targetField>
+    <targetFieldChangeToValues>Contrato Firmado,Pendiente Generar Contrato,Esperando Firma,Contrato Generado,Rechazada,Pendiente Documentación,En proceso de Contratación,Solicitud de Llamada</targetFieldChangeToValues>
+</AnimationRule>
