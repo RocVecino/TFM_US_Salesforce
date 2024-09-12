@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[¡Bienvenido a Columbia Seguros!]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[Estimado/a&nbsp;{!Lead.Email},&nbsp;<div><br></div><div>Gracias por confiar en nosotros para cuidar de su salud. A continuación encontrará los detalles importantes sobre los documentos necesarios para continuar con el proceso:</div><div><br></div><div><ul><li>Documentos Necesarios:&nbsp;{!Lead.HC_fld_documentosNecesariosAdjuntar__c}</li></ul><div><br></div></div><div>Si necesita más información o desea realizar algún cambio, no dude en contactarnos.</div><div><br></div><div>Para adjuntar la documentación, puede hacerlo desde el portal:&nbsp;https://gmailcomhealthcloud5-dev-ed.develop.my.site.com/columbiahc/s/</div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

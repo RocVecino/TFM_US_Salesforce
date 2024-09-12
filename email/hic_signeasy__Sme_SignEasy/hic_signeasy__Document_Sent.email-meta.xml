@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <available>true</available>
+    <description>Send Email to Current User for informing that email is sent to the recipient.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Document Sent</name>
+    <style>none</style>
+    <subject>Document Sent</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

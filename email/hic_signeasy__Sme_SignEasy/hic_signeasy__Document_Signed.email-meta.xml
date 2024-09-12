@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <available>true</available>
+    <description>Send Email to Current User for informing that sign is completed by the recipient</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Document Signed</name>
+    <style>none</style>
+    <subject>Sign Completed</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

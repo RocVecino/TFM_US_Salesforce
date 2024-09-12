@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert for signaturit created request error</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Signaturit_Request_Error_Email</name>
+    <style>none</style>
+    <subject>Signaturit Request Error</subject>
+    <textOnly>Hello  
+
+The signature request {!signaturit__SignatureRequest__c.Name} has failed  
+
+The error {!signaturit__SignatureRequest__c.signaturit__EndUserError__c} 
+
+Best regards</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

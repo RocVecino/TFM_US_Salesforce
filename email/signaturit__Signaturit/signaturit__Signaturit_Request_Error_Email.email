@@ -1,0 +1,7 @@
+Hello
+<br/>
+The signature request {!signaturit__SignatureRequest__c.Name} has failed
+<br/>
+The error {!signaturit__SignatureRequest__c.signaturit__EndUserError__c}
+<br/>
+Best regards

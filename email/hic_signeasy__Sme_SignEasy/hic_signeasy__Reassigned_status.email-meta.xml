@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <available>true</available>
+    <description>Providing Status about Reassigning PDF</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Reassigned status</name>
+    <style>none</style>
+    <subject>Signing Transaction for SME.Pdf Successfully Reassigned</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
